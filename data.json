@@ -1,0 +1,2407 @@
+{
+    "tasks": [
+        {
+            "task_id": "TASK-000023",
+            "registry": "REG-000023",
+            "status": "active",
+            "heading": "qf-api এর প্রাথমিক সেটআপ",
+            "description": "qf-api এর প্রাথমিক সেটআপ \n\nধাপ ১: পরিবেশ যাচাই\ndotnet --info\ndotnet --version\n\nযা দেখা উচিত: dotnet --version-এ 10.0.112 বা 10.0.x। dotnet --info-এ Microsoft.NETCore.App 10.x তালিকায় থাকা উচিত।\n\nধাপ ২: zip ফাইল ঠিক জায়গায় আছে কিনা দেখা\nls -lh ~/Downloads/qf-api-dotnet.zip\n\nযা দেখা উচিত: ফাইলটির আকার প্রায় কয়েক কিলোবাইট থেকে কয়েকশো কিলোবাইট।\n\nফাইল না থাকলে: find ~ -name qf-api-dotnet.zip 2>/dev/null দিয়ে খুঁজুন।\n\nধাপ ৩: unzip ইনস্টল ও zip খোলা\nwhich unzip || sudo apt update && sudo apt install -y unzip\nmkdir -p ~/projects\nunzip -q ~/Downloads/qf-api-dotnet.zip -d ~/projects\ncd ~/projects/qf-api\npwd\nls -la\n\nযা দেখা উচিত: pwd-এ /home/mj/projects/qf-api। ls-এ QF.Api, QF.Api.Tests, deploy, README.md, .gitignore দেখা উচিত।\n\nধাপ ৪: সলিউশন ফাইল তৈরি (একবার)\nএটি একটি .sln ফাইল বানায়, যাতে একটি কমান্ডে দুই প্রজেক্ট একসঙ্গে বিল্ড ও টেস্ট করা যায়।\ncd ~/projects/qf-api\ndotnet new sln -n QfApi\ndotnet sln QfApi.sln add QF.Api/QF.Api.csproj\ndotnet sln QfApi.sln add QF.Api.Tests/QF.Api.Tests.csproj\ndotnet sln QfApi.sln list\n\nযা দেখা উচিত: dotnet sln list-এ দুটি .csproj ফাইলের পথ।\n\nধাপ ৫: প্যাকেজ ডাউনলোড (restore)\nএই ধাপে NuGet থেকে EF Core, JWT, MailKit, xUnit ইত্যাদি নামে। ইন্টারনেট লাগবে।\ncd ~/projects/qf-api\ndotnet restore QfApi.sln\nযা দেখা উচিত: শেষে Restore succeeded বা Restored ... (in ... sec)।\n\nব্যর্থ হলে: আউটপুটে NU দিয়ে শুরু কোডসহ লাইন দেখুন এবং পাঠান।\n\nধাপ ৬: বিল্ড (build)\ncd ~/projects/qf-api\ndotnet build QfApi.sln --configuration Debug\nযা দেখা উচিত: Build succeeded. এবং 0 Error(s)।\n\nওয়ার্নিং থাকতে পারে: Warning(s) আসতে পারে, সেটি ঠিক আছে। শুধু Error(s)-এর সংখ্যা ও error CS... লাইনগুলো গুরুত্বপূর্ণ।\n\nধাপ ৭: টেস্ট (test)\ncd ~/projects/qf-api\ndotnet test QfApi.sln --configuration Debug\n\nযা দেখা উচিত: শেষে Passed! বা Test Run Successful, সঙ্গে পাস/ফেল সংখ্যা।\nকিছু ফেল করলে: [FAIL] লাইন ও তার নিচের ত্রুটির বার্তা পাঠান।\nযদি কোনো ধাপে সমস্যা হয়\nপরিষ্কার করে আবার চালাতে:\ncd ~/projects/qf-api\ndotnet clean QfApi.sln\nrm -rf QF.Api/bin QF.Api/obj QF.Api.Tests/bin QF.Api.Tests/obj\ndotnet restore QfApi.sln\n\nযা ড্রাফ্ট নোট করে রাখতে হবে:\nপ্রতিটি ধাপের আউটপুটের শেষ ২০-৩০ লাইন, এবং কোনো ধাপে error থাকলে সেই error CS... বা NU... লাইনগুলো। তাহলে আমি সেগুলো দেখে ঠিক করে দিতে পারব।\nএকটি বিষয় মনে রাখা উচিত: dotnet build ও dotnet test-এর জন্য user-secrets লাগবে না। টেস্ট নিজের সেটিংস নিজে দেয়। গোপন তথ্য (Jwt:Key, Admin:PasswordHash) শুধু লোক���লে সার্ভার চালানোর সময় লাগবে।",
+            "created_dhaka": "2026-10-18 17:21:15.458",
+            "created_utc": "2026-10-18 11:21:15.458",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "দুটি txt ফাইল qf-api-dev0.txt qf-api-dev1.txt তৈরি করা এবং নিজের মতো করে যথাযথ স্থানে সংরক্ষণ করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "qf-api-dev0.txt এর মধ্যে যাবতীয় সকল কমান্ড ও নির্দেশনা ও ধাপ গুলো যথাযথ ভাবে যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "qf-api-dev1.txt এর মধ্যে কমান্ড চালানো পরবর্তী রিপোর্ট সংগ্রহ করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "প্রাথমিক ভাবে বিল্ড ও টেস্ট সম্পূর্ণ করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "একাধিক বার পরিক্ষা করে শতভাগ নিশ্চিত হওয়া কার্যকর সম্পর্কে",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "শতভাগ নিশ্চিত পরবর্তী এটিকে চুড়ান্ত ডিপ্লয় করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-18 17:21:15.458",
+                    "utc": "2026-10-18 11:21:15.458",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 6,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000022",
+            "registry": "REG-000022",
+            "status": "active",
+            "heading": "লোকাল হোস্ট সমস্যা প্রাথমিক সমাধান",
+            "description": "লোকাল কপি, Browser Cache এবং Python HTTP Server সম্পর্কিত সাধারণ সমস্যা শনাক্ত ও সমাধানের প্রাথমিক দক্ষতা অর্জন।\n\nধাপ ১: পুরোনো qf ফোল্ডার খুঁজে বের করুন।\nকমান্ড: find ~ -maxdepth 4 -type d -name qf 2>/dev/null\n\nধাপ ২: পুরোনো কপি নিরাপদে সরিয়ে নতুন কপি স্থাপন করুন।\nকমান্ড:\nmkdir -p ~/qf-site\n[ -d ~/qf-site/qf ] && mv ~/qf-site/qf ~/qf_old_backup\nunzip -o ~/Downloads/qf.zip -d ~/qf-site\n\nধাপ ৩: unzip বা python3 অনুপস্থিত থাকলে ইনস্টল করুন।\nকমান্ড:\nsu -c 'apt update && apt install -y unzip python3'\n\nধাপ ৪: নতুন কপি যাচাই করুন।\nকমান্ড:\ngrep -c 'data-lang-button=\"ar\"' ~/qf-site/qf/home/index.html\nপ্রত্যাশিত ফলাফল: 1\n\nধাপ ৫: লোকাল সার্ভার চালু করুন।\nকমান্ড:\ncd ~/qf-site\npython3 -m http.server 8000\n\nব্রাউজার:\nhttp://localhost:8000/qf/home/index.html\n\nধাপ ৬: Port Conflict হলে।\nকমান্ড:\npkill -f 'http.server 8000'\n\nঅথবা:\npython3 -m http.server 8080\n\nধাপ ৭: Browser Cache পরিষ্কার করুন।\nCtrl + Shift + R ব্যবহার করুন অথবা Incognito Window খুলুন।\n\nধাপ ৮: চূড়ান্ত যাচাই করুন।\nDeveloper Tools Console:\ndocument.querySelectorAll('[data-lang-button=\"ar\"]').length\n\nপ্রত্যাশিত ফলাফল:\nEN | বাংলা | AR দৃশ্যমান হবে।\nAR নির্বাচন করলে RTL Layout সক্রিয় হবে।\nনতুন লোকাল কপি সঠিকভাবে লোড হবে।",
+            "created_dhaka": "2026-10-17 10:45:22.891",
+            "created_utc": "2026-10-17 04:45:22.891",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "পুরোনো কপি অনুসন্ধান",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "নিরাপদ ব্যাকআপ ও রিনেম",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "নতুন কপি স্থাপন",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "unzip ও python3 প্রস্তুতি",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "লোকাল HTTP সার্ভার চালানো",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Port Conflict সমাধান",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Browser Cache পরিষ্কার",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Incognito Testing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Developer Tools Verification",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "AR Language Testing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "RTL Layout Verification",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Final Localhost Validation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 10:45:22.891",
+                    "utc": "2026-10-17 04:45:22.891",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 12,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000021",
+            "registry": "REG-000021",
+            "status": "active",
+            "heading": "লোকাল হোস্ট সমস্যা প্রাথমিক সমাধান দক্ষতা অর্জন",
+            "description": "লোকাল কপি, ব্রাউজার ক্যাশ এবং Python HTTP Server সম্পর্কিত সাধারণ সমস্যা দ্রুত শনাক্ত ও সমাধানের জন্য প্রাথমিক দক্ষতা অর্জন। ধাপ ১: পুরোনো qf ফোল্ডার খুঁজে বের করুন। কমান্ড: find ~ -maxdepth 4 -type d -name qf 2>/dev/null। ফলাফল খালি এলে নতুন কপি নিয়ে কাজ শুরু করা যাবে। ধাপ ২: পুরোনো কপি নিরাপদে সরিয়ে নতুন কপি বসান। কমান্ড: mkdir -p ~/qf-site। এরপর: [ -d ~/qf-site/qf ] && mv ~/qf-site/qf ~/qf_old_2026-10-17_1028। তারপর: unzip -o ~/Downloads/qf.zip -d ~/qf-site। unzip বা python3 অনুপস্থিত থাকলে root হিসেবে চালান: su -c \"apt update && apt install -y unzip python3\"। নতুন কপি যাচাই করুন: grep -c 'data-lang-button=\"ar\"' ~/qf-site/qf/home/index.html। ফলাফল 1 হওয়া উচিত। ধাপ ৩: লোকাল সার্ভার চালু করুন। কমান্ড: cd ~/qf-site && python3 -m http.server 8000। ব্রাউজারে খুলুন: http://localhost:8000/qf/home/index.html। যদি Address already in use বার্তা আসে তাহলে: pkill -f 'http.server 8000'। অথবা অন্য পোর্ট ব্যবহার করুন: python3 -m http.server 8080। ধাপ ৪: ব্রাউজার ক্যাশ পরিষ্কার করুন। Ctrl+Shift+R ব্যবহার করুন অথবা Ctrl+Shift+N দিয়ে Incognito উইন্ডো খুলে পরীক্ষা করুন। পুরোনো file:// বা অন্য পোর্টে খোলা ট্যাব বন্ধ করুন। ধাপ ৫: চূড়ান্ত যাচাই করুন। Developer Tools খুলে Console-এ চালান: document.querySelectorAll('[data-lang-button=\"ar\"]').length। ফলাফল 1 হলে নতুন কপি সঠিকভাবে চলছে। হেডারে EN | বাংলা | AR দেখা যাবে এবং AR নির্বাচন করলে আরবি ও RTL লেআউট সক্রিয় হবে।",
+            "created_dhaka": "2026-10-17 10:28:18.712",
+            "created_utc": "2026-10-17 04:28:18.712",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "পুরোনো কপি অনুসন্ধান",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "নিরাপদ ব্যাকআপ ও রিনেম কৌশল শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "নতুন কপি ডিপ্লয় করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "unzip ও python3 ইনস্টল করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "লোকাল HTTP সার্ভার চালানো",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Port Conflict সমাধান করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Browser Cache Troubleshooting শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Incognito Testing করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Developer Tools ব্যবহার করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Console Validation করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "ভাষা পরিবর্তন পরীক্ষা করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "RTL Rendering যাচাই করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 10:28:18.712",
+                    "utc": "2026-10-17 04:28:18.712",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 12,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000020",
+            "registry": "REG-000020",
+            "status": "active",
+            "heading": "সার্ভারের প্রাথমিক জরুরী ধারণা গুলো আয়ত্ব করা",
+            "description": "সার্ভার (SSH) এবং ব্রাউজারের জন্য হঠাৎ সমস্যা সমাধানের উপর মোটামুটি দক্ষতা অর্জন। প্রথমে সার্ভারে পুরোনো ফাইলের ব্যাকআপ নিন, তারপর মুছুন। user, your-server এবং /var/www/html নিজের সেটআপ অনুযায়ী বদলান। ১. সার্ভারে পুরোনো ফাইল মুছে ফেলা। ধাপ ১: সার্ভারে লগইন ও কী আছে দেখুন: ssh user@your-server, ls -la /var/www/html/, sudo ls /var/www/html/qf। ধাপ ২: পুরোনো ফোল্ডারের ব্যাকআপ নিন: sudo tar -czf ~/qf_backup_$(date +%F_%H%M).tar.gz -C /var/www/html qf, ls -lh ~/qf_backup_*.tar.gz। ধাপ ৩: পুরোনো ফোল্ডার মুছুন: sudo rm -rf /var/www/html/qf। প্রয়োজনে ব্যাকআপ থেকে পুনরুদ্ধার: sudo tar -xzf ~/qf_backup_YYYY-MM-DD_HHMM.tar.gz -C /var/www/html। ধাপ ৪: নতুন ফাইল আপলোড করুন: unzip -o ~/Downloads/qf.zip -d ~/qf-site, scp -r ~/qf-site/qf user@your-server:/tmp/qf_new, ssh user@your-server, sudo mv /tmp/qf_new /var/www/html/qf, sudo chown -R www-data:www-data /var/www/html/qf, sudo find /var/www/html/qf -type d -exec chmod 755 {} \\;, sudo find /var/www/html/qf -type f -exec chmod 644 {} \\;। ধাপ ৫: Nginx হলে sudo nginx -t && sudo systemctl reload nginx, Apache হলে sudo apache2ctl configtest && sudo systemctl reload apache2। ধাপ ৬: curl ব্যবহার করে নতুন ফাইল যাচাই করুন এবং প্রয়োজন হলে CDN Purge Everything করুন। ২. ব্রাউজারের পুরোনো ক্যাশ মুছে ফেলা: Windows/Linux Ctrl+Shift+R, Mac Cmd+Shift+R, Developer Tools থেকে Disable Cache, প্রয়োজন অনুযায়ী Chrome, Edge, Firefox, Safari, Android, iPhone এবং Linux ক্যাশ ক্লিয়ার পদ্ধতি অনুসরণ করুন। NetHunter/Kali/Linux এ rm -rf ~/.cache/chromium ~/.cache/google-chrome ~/.cache/mozilla/firefox ব্যবহার করুন। ৩. শেষ যাচাই: EN | বাংলা | AR ভাষা বাটন পরীক্ষা করুন, AR নির্বাচন করলে RTL আরবি লেআউট নিশ্চিত করুন। Developer Tools Console-এ document.querySelectorAll('[data-lang-button=\"ar\"]').length চালিয়ে ফলাফল 1 কিনা যাচাই করুন।",
+            "created_dhaka": "2026-10-17 10:17:12.264",
+            "created_utc": "2026-10-17 04:17:12.264",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "SSH বেসিক ধারণা শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "সার্ভারে নিরাপদ লগইন অনুশীলন",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "ব্যাকআপ তৈরির প্রক্রিয়া আয়ত্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "পুরোনো ফাইল অপসারণ অনুশীলন",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "SCP দিয়ে ফাইল ট্রান্সফার শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Permissions ও Ownership বোঝা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Nginx ও Apache Reload অনুশীলন",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Curl দিয়ে ভেরিফিকেশন শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "CDN Cache Management শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Browser Cache Troubleshooting শেখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Developer Tools ব্যবহার করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Final Deployment Verification সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 10:17:12.264",
+                    "utc": "2026-10-17 04:17:12.264",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 12,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000019",
+            "registry": "REG-000019",
+            "status": "active",
+            "heading": "Quraner Fariwala Civilizational Foundation",
+            "description": "Humanity First নীতির ভিত্তিতে Quraner Fariwala এর দীর্ঘমেয়াদী জ্ঞান, শিক্ষা, গবেষণা, সংলাপ, প্রযুক্তি ও সংরক্ষণ অবকাঠামোর মৌলিক ভিত্তি ডিজাইন ও চূড়ান্ত করা।",
+            "created_dhaka": "2026-10-17 02:30:40.938",
+            "created_utc": "2026-10-16 20:30:40.938",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define constitution",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Establish root principles",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Design core architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define knowledge ecosystem",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Define dialogue framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Define research ecosystem",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Define AI infrastructure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Define archive strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Define governance framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Finalize foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:30:40.938",
+                    "utc": "2026-10-16 20:30:40.938",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 10,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000018",
+            "registry": "REG-000018",
+            "status": "active",
+            "heading": "Quraner Fariwala Constitutional Foundation",
+            "description": "Humanity First নীতির ভিত্তিতে Quraner Fariwala এর সাংবিধানিক ভিত্তি, মূল স্থাপত্য, জ্ঞান অবকাঠামো, গবেষণা কাঠামো, শিক্ষা কাঠামো, সংলাপ কাঠামো, AI কাঠামো, সংরক্ষণ নীতি, নিরাপত্তা নীতি ও পরিচালন কাঠামোর প্রাথমিক সংস্করণ ডিজাইন, পর্যালোচনা ও চূড়ান্ত করা।",
+            "created_dhaka": "2026-10-17 02:30:06.005",
+            "created_utc": "2026-10-16 20:30:06.005",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define constitution",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Establish core principles",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Design root architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define humanity layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Design question system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Design answer workflow",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Define review system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Define knowledge framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Define learning framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Define research framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Define dialogue framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Define AI framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Define archive strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Define safety framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Define governance framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Define registry structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Define knowledge graph model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Review foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Approve foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:30:06.005",
+                    "utc": "2026-10-16 20:30:06.005",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 19,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000017",
+            "registry": "REG-000017",
+            "status": "active",
+            "heading": "Quraner Fariwala Constitutional Foundation",
+            "description": "Humanity First নীতির ভিত্তিতে Quraner Fariwala এর সাংবিধানিক, জ্ঞানগত, গবেষণা, শিক্ষা, সংলাপ, প্রযুক্তি ও সংরক্ষণ অবকাঠামোর প্রথম Foundation Release চূড়ান্ত করা।",
+            "created_dhaka": "2026-10-17 02:28:55.181",
+            "created_utc": "2026-10-16 20:28:55.181",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define constitution",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Establish principles",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Design architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define humanity layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Design knowledge system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Design research system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Design learning system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Design dialogue system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Design AI infrastructure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Design archive framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Define governance",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Finalize foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:28:55.181",
+                    "utc": "2026-10-16 20:28:55.181",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 12,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000016",
+            "registry": "REG-000016",
+            "status": "active",
+            "heading": "Quraner Fariwala Core Architecture",
+            "description": "Quraner Fariwala Foundation এর উপর ভিত্তি করে System Architecture, Domain Structure, Registry Structure, Knowledge Structure, Workflow Structure এবং Infrastructure Blueprint ডিজাইন ও চূড়ান্ত করা।",
+            "created_dhaka": "2026-10-17 02:28:05.132",
+            "created_utc": "2026-10-16 20:28:05.132",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define domains",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Design structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define registries",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Design workflows",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Define knowledge model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Define review model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Design archive model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Design AI architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Design access framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Define system boundaries",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Review architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Finalize architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:28:05.132",
+                    "utc": "2026-10-16 20:28:05.132",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 12,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000015",
+            "registry": "REG-000015",
+            "status": "active",
+            "heading": "Quraner Fariwala Registry and Governance",
+            "description": "Quraner Fariwala এর Registry System, Governance Structure, Review Authority, Accountability Framework, Decision Process এবং Audit Mechanism এর প্রাথমিক সংস্করণ ডিজাইন ও চূড়ান্ত করা।",
+            "created_dhaka": "2026-10-17 02:26:55.250",
+            "created_utc": "2026-10-16 20:26:55.250",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define registries",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Define governance roles",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define review workflow",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define accountability model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Define audit framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Define decision process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Validate governance structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Finalize governance",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:26:55.250",
+                    "utc": "2026-10-16 20:26:55.250",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 8,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000014",
+            "registry": "REG-000014",
+            "status": "active",
+            "heading": "Quraner Fariwala Knowledge Framework",
+            "description": "Quraner Fariwala এর Knowledge Graph, Question Registry, Evidence Registry, Reference System, Learning Structure এবং Knowledge Lifecycle এর ভিত্তি চূড়ান্ত করা।",
+            "created_dhaka": "2026-10-17 02:25:49.347",
+            "created_utc": "2026-10-16 20:25:49.347",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define knowledge graph",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Define question registry",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define evidence registry",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define reference system",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Define learning model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Define knowledge lifecycle",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Review framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Finalize framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:25:49.347",
+                    "utc": "2026-10-16 20:25:49.347",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 8,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000013",
+            "registry": "REG-000013",
+            "status": "active",
+            "heading": "Quraner Fariwala Functional Prototype",
+            "description": "Core Architecture অনুযায়ী প্রশ্ন, উত্তর, জ্ঞান, গবেষণা ও রেজিস্ট্রি কাঠামোর কার্যকর Prototype Version প্রস্তুত করা।",
+            "created_dhaka": "2026-10-17 02:25:12.914",
+            "created_utc": "2026-10-16 20:25:12.914",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Build prototype",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Implement question flow",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Implement answer workflow",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Implement registry integration",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Implement knowledge framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Validate prototype",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Review functionality",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Finalize prototype",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:25:12.914",
+                    "utc": "2026-10-16 20:25:12.914",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 8,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000012",
+            "registry": "REG-000012",
+            "status": "active",
+            "heading": "Quraner Fariwala Integrated Platform",
+            "description": "প্রধান System Layer, Knowledge Framework, Research Framework, Learning Framework, AI Framework এবং Registry Layer সমন্বিত করে একটি একীভূত Platform প্রস্তুত করা।",
+            "created_dhaka": "2026-10-17 02:23:17.224",
+            "created_utc": "2026-10-16 20:23:17.224",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Integrate core systems",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Integrate knowledge layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Integrate research layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Integrate learning layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Integrate AI layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Integrate registry layer",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Validate integrations",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Finalize platform",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:23:17.224",
+                    "utc": "2026-10-16 20:23:17.224",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 8,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000011",
+            "registry": "REG-000011",
+            "status": "active",
+            "heading": "Quraner Fariwala milestone steps structure setup",
+            "description": "Quraner Fariwala এর সকল স্টেটস প্রস্তুত, যাচাই, সংরক্ষণ, প্রকাশ ও নিবন্ধন সম্পন্ন করা এবং Foundation, Architecture, Governance, Knowledge, Research, Learning, AI ও Archive Framework এর অনুমোদিত সংস্করণ জনসাধারণের জন্য উন্মুক্ত করা ইত্যাদি সব কিছুর জন্য প্রাথমিক চুড়ান্ত কাঠামো নিশ্চিত করা এবং কাঠামো সেটাপ পরবর্তী কোনটির অধিনে কিভাবে কি থাকবে ঐ রকম একটি করে ড্রাফ্ট কপি উদাহরণ হিসেবে তৈরি করে যুক্ত করা",
+            "created_dhaka": "2026-10-17 02:20:36.601",
+            "created_utc": "2026-10-16 20:20:36.601",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "0.0 Vision",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "0.1 Constitutional Foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "0.2 Core Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "0.3 Registry and Governance",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "0.4 Knowledge Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "0.5 Functional Prototype",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "0.6 Integrated Platform",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "0.7 Public Beta",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "0.8 Verification and Hardening",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "0.9 Release Candidate",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "1.0 First Stable Release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:20:36.601",
+                    "utc": "2026-10-16 20:20:36.601",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 11,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000010",
+            "registry": "REG-000010",
+            "status": "active",
+            "heading": "Quraner Fariwala 1.0 Final Release Checklist",
+            "description": "Quraner Fariwala 1.0 First Stable Release এর পূর্বে Foundation, Architecture, Governance, Knowledge, Security, Documentation, Registry, Archive এবং Release Asset এর পূর্ণাঙ্গ যাচাই সম্পন্ন করা।",
+            "created_dhaka": "2026-10-17 02:09:52.245",
+            "created_utc": "2026-10-16 20:09:52.245",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Review foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Review architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Review governance",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Review knowledge framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Review platform",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Verify safety controls",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Verify documentation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Verify registry records",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Verify archives",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Verify release assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Perform final audit",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Approve release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-17 02:09:52.245",
+                    "utc": "2026-10-16 20:09:52.245",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 12,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000009",
+            "registry": "REG-000009",
+            "status": "active",
+            "heading": "Quraner Fariwala 0.0 First Stable Release",
+            "description": "TASK-000002 এর প্রাথমিক সম্পূর্ণের ভিত্তিতে TASK-000008 সম্পূর্ণ করার ক্ষেত্রে কয়েকটি বিষয় সঠিক ও যথার্থ ভাবে যুক্ত করা উচিত, তাই TASK-000008 সম্পূর্ণ পরবর্তী Quraner Fariwala 0.0 হিসেবে এর প্রথম প্রস্ততকৃত Stable Public Release টি যাচাই, রিপোর্ট সংরক্ষণ, প্রকাশ ও রেজিঃ নিবন্ধন সম্পন্ন করা, এবং পরবর্তী যে বিষয় গুলো আরো গভীর সেই গুলো, অর্থাৎ Foundation, Architecture, Governance, Knowledge, Research, Learning, AI ও Archive Framework এর একাধিক ভার গভীর ভাবে আলোচনা পর্যালোচনা পরবর্তী প্রতিটি বিষয়ের কার্যক্রমগুলোর মূল কাঠামোটি চুড়ান্ত করার চেষ্টা করা, যা কোন ধরনের প্রশ্নের মুখোমুখি হলে যথাযথ সঠিক উত্তর নির্দ্বিধায় প্রকাশ করতে কোন ধরনের সংকুচ না হয়, এবং চুড়ান্ত কাঠামোর যথাযথ সকল সেটাপ ও চুড়ান্ত রিভিউ পরবর্তী অনুমোদিত সংস্করণ হিসেবে জনসাধারণের জন্য উন্মুক্ত থাকবে।",
+            "created_dhaka": "2026-10-16 23:58:21.953",
+            "created_utc": "2026-10-16 17:58:21.953",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Create platform readiness Design",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Create final Overview for this",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Structure governance compliance",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Structure knowledge integrity",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Adding and Validate archive readiness Setup",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Prepare release assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Publish stable release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Register release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Archive release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Announce version 0.0 or Quraner Fariwala 0.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-16 23:58:21.953",
+                    "utc": "2026-10-16 17:58:21.953",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 10,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000008",
+            "registry": "REG-000008",
+            "status": "active",
+            "heading": "Quraner Fariwala Initial Release",
+            "description": "Quraner Fariwala Public Site এর প্রথম Release Version Package, Archive, Publish ও Registry সম্পন্ন করা।",
+            "created_dhaka": "2026-10-16 21:52:25.912",
+            "created_utc": "2026-10-16 15:52:25.912",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Build release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Generate APK",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Create ZIP",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Publish assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Store archive",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Register release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-16 21:52:25.912",
+                    "utc": "2026-10-16 15:52:25.912",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 6,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000007",
+            "registry": "REG-000007",
+            "status": "completed",
+            "heading": "Tracker system create",
+            "description": "MJ এর আওতায় Self tracking system ডিজাইন করা ও যথাযথ ভাবে সেটআপ করা",
+            "created_dhaka": "2026-10-15 23:50:45.662",
+            "created_utc": "2026-10-15 17:50:45.662",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Initial setup",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:36:33.327",
+                    "completed_utc": "2026-10-16 02:36:33.327"
+                },
+                {
+                    "id": 2,
+                    "title": "testing working activity",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:37:02.601",
+                    "completed_utc": "2026-10-16 02:37:02.601"
+                },
+                {
+                    "id": 3,
+                    "title": "backup a copy in backup/mj/tracker/v1/tracker-system",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:42:39.010",
+                    "completed_utc": "2026-10-16 02:42:39.010"
+                },
+                {
+                    "id": 4,
+                    "title": "add in mj root",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:37:28.203",
+                    "completed_utc": "2026-10-16 02:37:28.203"
+                },
+                {
+                    "id": 5,
+                    "title": "update mj home page footer links",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:37:50.423",
+                    "completed_utc": "2026-10-16 02:37:50.423"
+                },
+                {
+                    "id": 6,
+                    "title": "Testing by searching by the link across multiple browsers",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:38:11.977",
+                    "completed_utc": "2026-10-16 02:38:11.977"
+                },
+                {
+                    "id": 7,
+                    "title": "alias setup in Shell for development",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:51:20.037",
+                    "completed_utc": "2026-10-16 02:51:20.037"
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-15 23:50:45.662",
+                    "utc": "2026-10-15 17:50:45.662",
+                    "action": "Task created"
+                },
+                {
+                    "dhaka": "2026-10-16 08:36:33.327",
+                    "utc": "2026-10-16 02:36:33.327",
+                    "action": "Completed Step 1: Initial setup"
+                },
+                {
+                    "dhaka": "2026-10-16 08:37:02.601",
+                    "utc": "2026-10-16 02:37:02.601",
+                    "action": "Completed Step 2: testing working activity"
+                },
+                {
+                    "dhaka": "2026-10-16 08:37:28.203",
+                    "utc": "2026-10-16 02:37:28.203",
+                    "action": "Completed Step 4: add in mj root"
+                },
+                {
+                    "dhaka": "2026-10-16 08:37:50.423",
+                    "utc": "2026-10-16 02:37:50.423",
+                    "action": "Completed Step 5: update mj home page footer links"
+                },
+                {
+                    "dhaka": "2026-10-16 08:38:11.977",
+                    "utc": "2026-10-16 02:38:11.977",
+                    "action": "Completed Step 6: Testing by searching by the link across multiple browsers"
+                },
+                {
+                    "dhaka": "2026-10-16 08:42:39.010",
+                    "utc": "2026-10-16 02:42:39.010",
+                    "action": "Completed Step 3: backup a copy in backup/mj/tracker/v1/tracker-system"
+                },
+                {
+                    "dhaka": "2026-10-16 08:51:20.037",
+                    "utc": "2026-10-16 02:51:20.037",
+                    "action": "Completed Step 7: alias setup in Shell for development"
+                },
+                {
+                    "dhaka": "2026-10-16 08:51:52.402",
+                    "utc": "2026-10-16 02:51:52.402",
+                    "action": "Task completed and archived"
+                }
+            ],
+            "progress": {
+                "completed": 7,
+                "remaining": 0,
+                "percentage": 100
+            },
+            "completed_dhaka": "2026-10-16 08:51:52.402",
+            "completed_utc": "2026-10-16 02:51:52.402",
+            "overview": "Task execution completed successfully.\n\nTask:\nTracker system create\n\nAll planned implementation activities\nhave been completed and validated.\n\nSupporting documentation, evidence files, notes,\nand execution records have been successfully archived.\n\nCompletion Rate: 100%\n\nThis task is now considered ready for archival,\ninheritance, future reference, and stewardship review.",
+            "evaluation": {
+                "steps_total": 7,
+                "steps_completed": 7,
+                "completion_percentage": 100,
+                "notes": 0,
+                "attachments": 0,
+                "archive_ready": true
+            }
+        },
+        {
+            "task_id": "TASK-000006",
+            "registry": "REG-000006",
+            "status": "completed",
+            "heading": "Task system create",
+            "description": "MJ এর আওতায় সয়ংসম্পূর্ণ ভাবে Task system ডিজাইন করা ও যথাযথ ভাবে সেটআপ করা",
+            "created_dhaka": "2026-10-15 23:47:40.717",
+            "created_utc": "2026-10-15 17:47:40.717",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Initial setup",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-15 23:59:26.023",
+                    "completed_utc": "2026-10-15 17:59:26.023"
+                },
+                {
+                    "id": 2,
+                    "title": "testing working activity",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-15 23:59:40.884",
+                    "completed_utc": "2026-10-15 17:59:40.884"
+                },
+                {
+                    "id": 3,
+                    "title": "backup a copy in backup/mj/task/v1/task-system",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 05:05:26.911",
+                    "completed_utc": "2026-10-15 23:05:26.911"
+                },
+                {
+                    "id": 4,
+                    "title": "add in mj root",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-15 23:59:48.498",
+                    "completed_utc": "2026-10-15 17:59:48.498"
+                },
+                {
+                    "id": 5,
+                    "title": "update mj home page footer links",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 04:46:29.867",
+                    "completed_utc": "2026-10-15 22:46:29.867"
+                },
+                {
+                    "id": 6,
+                    "title": "Testing by searching by the link across multiple browsers",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 04:46:39.494",
+                    "completed_utc": "2026-10-15 22:46:39.494"
+                },
+                {
+                    "id": 7,
+                    "title": "alias setup in Shell for development",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 05:01:48.514",
+                    "completed_utc": "2026-10-15 23:01:48.514"
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-15 23:47:40.717",
+                    "utc": "2026-10-15 17:47:40.717",
+                    "action": "Task created"
+                },
+                {
+                    "dhaka": "2026-10-15 23:59:26.023",
+                    "utc": "2026-10-15 17:59:26.023",
+                    "action": "Completed Step 1: Initial setup"
+                },
+                {
+                    "dhaka": "2026-10-15 23:59:40.884",
+                    "utc": "2026-10-15 17:59:40.884",
+                    "action": "Completed Step 2: testing working activity"
+                },
+                {
+                    "dhaka": "2026-10-15 23:59:48.498",
+                    "utc": "2026-10-15 17:59:48.498",
+                    "action": "Completed Step 4: add in mj root"
+                },
+                {
+                    "dhaka": "2026-10-16 04:46:29.867",
+                    "utc": "2026-10-15 22:46:29.867",
+                    "action": "Completed Step 5: update mj home page footer links"
+                },
+                {
+                    "dhaka": "2026-10-16 04:46:39.494",
+                    "utc": "2026-10-15 22:46:39.494",
+                    "action": "Completed Step 6: Testing by searching by the link across multiple browsers"
+                },
+                {
+                    "dhaka": "2026-10-16 05:01:48.514",
+                    "utc": "2026-10-15 23:01:48.514",
+                    "action": "Completed Step 7: alias setup in Shell for development"
+                },
+                {
+                    "dhaka": "2026-10-16 05:05:26.911",
+                    "utc": "2026-10-15 23:05:26.911",
+                    "action": "Completed Step 3: backup a copy in backup/mj/task/v1/task-system"
+                },
+                {
+                    "dhaka": "2026-10-16 05:06:05.134",
+                    "utc": "2026-10-15 23:06:05.134",
+                    "action": "Task completed and archived"
+                }
+            ],
+            "progress": {
+                "completed": 7,
+                "remaining": 0,
+                "percentage": 100
+            },
+            "completed_dhaka": "2026-10-16 05:06:05.134",
+            "completed_utc": "2026-10-15 23:06:05.134",
+            "overview": "Task execution completed successfully.\n\nTask:\nTask system create\n\nAll planned implementation activities\nhave been completed and validated.\n\nSupporting documentation, evidence files, notes,\nand execution records have been successfully archived.\n\nCompletion Rate: 100%\n\nThis task is now considered ready for archival,\ninheritance, future reference, and stewardship review.",
+            "evaluation": {
+                "steps_total": 7,
+                "steps_completed": 7,
+                "completion_percentage": 100,
+                "notes": 0,
+                "attachments": 0,
+                "archive_ready": true
+            }
+        },
+        {
+            "task_id": "TASK-000005",
+            "registry": "REG-000005",
+            "status": "active",
+            "heading": "QuranerFariwala V4",
+            "description": "ভার্সন-৪ এর আওতায় Investment page, Supporter page, দায়িত্বশীল পেইজ তৈরি করা",
+            "created_dhaka": "2026-10-15 23:30:24.491",
+            "created_utc": "2026-10-15 17:30:24.491",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Investment root structure create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Investment template create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Supporter root structure create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Supporter template create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Responsible root structure create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Responsible template create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-15 23:30:24.491",
+                    "utc": "2026-10-15 17:30:24.491",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 6,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000004",
+            "registry": "REG-000004",
+            "status": "active",
+            "heading": "QuranerFariwala V3",
+            "description": "ভার্সন-৩ এর আওতায় about us, folder structure, home page update",
+            "created_dhaka": "2026-10-15 23:22:29.561",
+            "created_utc": "2026-10-15 17:22:29.561",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "data.txt draft",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "update home page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "about page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "listed of required pages for new create",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-15 23:22:29.561",
+                    "utc": "2026-10-15 17:22:29.561",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 4,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000003",
+            "registry": "REG-000003",
+            "status": "active",
+            "heading": "QuranerFariwala V2",
+            "description": "ভার্সন-২ এর আওতায় বর্তমানে থাকা স্টেটিক ফাইল গুলো EN|BN|AR এ আভডেট করা",
+            "created_dhaka": "2026-10-15 23:16:11.310",
+            "created_utc": "2026-10-15 17:16:11.310",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Home page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Terms",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "privacy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "sitemap",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "contact",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "printing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Distribution",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "faq",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "education",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "in_development",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Hifz_portal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-15 23:16:11.310",
+                    "utc": "2026-10-15 17:16:11.310",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 11,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000002",
+            "registry": "REG-000002",
+            "status": "completed",
+            "heading": "Quraner Fariwala",
+            "description": "স্টেটিক ফাইল গুলো ঠিক করে আপলোড করা",
+            "created_dhaka": "2026-10-15 23:10:35.120",
+            "created_utc": "2026-10-15 17:10:35.120",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Home page links update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 09:23:47.496",
+                    "completed_utc": "2026-10-16 03:23:47.496"
+                },
+                {
+                    "id": 2,
+                    "title": "Terms page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:01:44.907",
+                    "completed_utc": "2026-10-16 09:01:44.907"
+                },
+                {
+                    "id": 3,
+                    "title": "privacy page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:02:09.586",
+                    "completed_utc": "2026-10-16 09:02:09.586"
+                },
+                {
+                    "id": 4,
+                    "title": "sitemap page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:02:19.292",
+                    "completed_utc": "2026-10-16 09:02:19.292"
+                },
+                {
+                    "id": 5,
+                    "title": "contact page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:02:30.237",
+                    "completed_utc": "2026-10-16 09:02:30.237"
+                },
+                {
+                    "id": 6,
+                    "title": "printing page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:02:43.556",
+                    "completed_utc": "2026-10-16 09:02:43.556"
+                },
+                {
+                    "id": 7,
+                    "title": "Distribution page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:02:53.606",
+                    "completed_utc": "2026-10-16 09:02:53.606"
+                },
+                {
+                    "id": 8,
+                    "title": "faq page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:03:00.508",
+                    "completed_utc": "2026-10-16 09:03:00.508"
+                },
+                {
+                    "id": 9,
+                    "title": "education page update",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 15:03:06.846",
+                    "completed_utc": "2026-10-16 09:03:06.846"
+                },
+                {
+                    "id": 10,
+                    "title": "in_development page create",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 20:14:54.462",
+                    "completed_utc": "2026-10-16 14:14:54.462"
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-15 23:10:35.120",
+                    "utc": "2026-10-15 17:10:35.120",
+                    "action": "Task created"
+                },
+                {
+                    "dhaka": "2026-10-16 09:23:47.496",
+                    "utc": "2026-10-16 03:23:47.496",
+                    "action": "Completed Step 1: Home page links update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:01:44.907",
+                    "utc": "2026-10-16 09:01:44.907",
+                    "action": "Completed Step 2: Terms page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:02:09.586",
+                    "utc": "2026-10-16 09:02:09.586",
+                    "action": "Completed Step 3: privacy page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:02:19.292",
+                    "utc": "2026-10-16 09:02:19.292",
+                    "action": "Completed Step 4: sitemap page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:02:30.237",
+                    "utc": "2026-10-16 09:02:30.237",
+                    "action": "Completed Step 5: contact page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:02:43.556",
+                    "utc": "2026-10-16 09:02:43.556",
+                    "action": "Completed Step 6: printing page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:02:53.606",
+                    "utc": "2026-10-16 09:02:53.606",
+                    "action": "Completed Step 7: Distribution page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:03:00.508",
+                    "utc": "2026-10-16 09:03:00.508",
+                    "action": "Completed Step 8: faq page update"
+                },
+                {
+                    "dhaka": "2026-10-16 15:03:06.846",
+                    "utc": "2026-10-16 09:03:06.846",
+                    "action": "Completed Step 9: education page update"
+                },
+                {
+                    "dhaka": "2026-10-16 20:14:54.462",
+                    "utc": "2026-10-16 14:14:54.462",
+                    "action": "Completed Step 10: in_development page create"
+                },
+                {
+                    "dhaka": "2026-10-16 20:15:23.894",
+                    "utc": "2026-10-16 14:15:23.894",
+                    "action": "Task completed and archived"
+                }
+            ],
+            "progress": {
+                "completed": 10,
+                "remaining": 0,
+                "percentage": 100
+            },
+            "completed_dhaka": "2026-10-16 20:15:23.894",
+            "completed_utc": "2026-10-16 14:15:23.894",
+            "overview": "Task execution completed successfully.\n\nTask:\nQuraner Fariwala\n\nAll planned implementation activities\nhave been completed and validated.\n\nSupporting documentation, evidence files, notes,\nand execution records have been successfully archived.\n\nCompletion Rate: 100%\n\nThis task is now considered ready for archival,\ninheritance, future reference, and stewardship review.",
+            "evaluation": {
+                "steps_total": 10,
+                "steps_completed": 10,
+                "completion_percentage": 100,
+                "notes": 0,
+                "attachments": 0,
+                "archive_ready": true
+            }
+        },
+        {
+            "task_id": "TASK-000001",
+            "registry": "REG-000001",
+            "status": "completed",
+            "heading": "Stewardship Task System Foundation Completed",
+            "description": "An inheritable task management system has been designed and implemented. Core registry management, task creation, progress tracking, completion reporting, attachment handling, audit trail generation, Dhaka and UTC timestamp management, and stewardship-oriented task governance mechanisms have been established. The project is prepared for dashboard integration, advanced reporting, and long-term operational use.",
+            "created_dhaka": "2026-10-15 14:36:53.041",
+            "created_utc": "2026-10-15 08:36:53.041",
+            "notes": [
+                "Initial foundation of the stewardship-oriented task management platform.",
+                "System designed for long-term inheritance, auditability, traceability, and operational stewardship.",
+                "Future phases include charts, analytics, parent-child task relationships, export functions, and advanced reporting."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Create project structure",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-15 14:37:03.504",
+                    "completed_utc": "2026-10-15 08:37:03.504"
+                },
+                {
+                    "id": 2,
+                    "title": "Implement _lib.py core library",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-15 14:37:11.658",
+                    "completed_utc": "2026-10-15 08:37:11.658"
+                },
+                {
+                    "id": 3,
+                    "title": "Implement add_task.py task creation system",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-15 14:37:18.656",
+                    "completed_utc": "2026-10-15 08:37:18.656"
+                },
+                {
+                    "id": 4,
+                    "title": "Implement track_task.py progress tracking system",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:56:34.197",
+                    "completed_utc": "2026-10-16 02:56:34.197"
+                },
+                {
+                    "id": 5,
+                    "title": "Implement validate.py database validation system",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:56:50.520",
+                    "completed_utc": "2026-10-16 02:56:50.520"
+                },
+                {
+                    "id": 6,
+                    "title": "Implement complete_task.py completion engine",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:57:28.002",
+                    "completed_utc": "2026-10-16 02:57:28.002"
+                },
+                {
+                    "id": 7,
+                    "title": "Create task registry database",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:57:49.412",
+                    "completed_utc": "2026-10-16 02:57:49.412"
+                },
+                {
+                    "id": 8,
+                    "title": "Create attachment storage mechanism",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:57:57.542",
+                    "completed_utc": "2026-10-16 02:57:57.542"
+                },
+                {
+                    "id": 9,
+                    "title": "Design stewardship workflow",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:58:03.682",
+                    "completed_utc": "2026-10-16 02:58:03.682"
+                },
+                {
+                    "id": 10,
+                    "title": "Develop dashboard architecture",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:58:11.549",
+                    "completed_utc": "2026-10-16 02:58:11.549"
+                },
+                {
+                    "id": 11,
+                    "title": "Create responsive user interface",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:58:24.847",
+                    "completed_utc": "2026-10-16 02:58:24.847"
+                },
+                {
+                    "id": 12,
+                    "title": "Verify data integrity",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:58:32.256",
+                    "completed_utc": "2026-10-16 02:58:32.256"
+                },
+                {
+                    "id": 13,
+                    "title": "Perform integration testing",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:58:43.382",
+                    "completed_utc": "2026-10-16 02:58:43.382"
+                },
+                {
+                    "id": 14,
+                    "title": "Prepare production deployment",
+                    "completed": true,
+                    "completed_dhaka": "2026-10-16 08:58:51.692",
+                    "completed_utc": "2026-10-16 02:58:51.692"
+                }
+            ],
+            "progress": {
+                "completed": 14,
+                "remaining": 0,
+                "percentage": 100
+            },
+            "history": [
+                {
+                    "dhaka": "2026-10-15 14:37:03.504",
+                    "utc": "2026-10-15 08:37:03.504",
+                    "action": "Completed Step 1: Create project structure"
+                },
+                {
+                    "dhaka": "2026-10-15 14:37:11.658",
+                    "utc": "2026-10-15 08:37:11.658",
+                    "action": "Completed Step 2: Implement _lib.py core library"
+                },
+                {
+                    "dhaka": "2026-10-15 14:37:18.656",
+                    "utc": "2026-10-15 08:37:18.656",
+                    "action": "Completed Step 3: Implement add_task.py task creation system"
+                },
+                {
+                    "dhaka": "2026-10-16 08:56:34.197",
+                    "utc": "2026-10-16 02:56:34.197",
+                    "action": "Completed Step 4: Implement track_task.py progress tracking system"
+                },
+                {
+                    "dhaka": "2026-10-16 08:56:50.520",
+                    "utc": "2026-10-16 02:56:50.520",
+                    "action": "Completed Step 5: Implement validate.py database validation system"
+                },
+                {
+                    "dhaka": "2026-10-16 08:57:28.002",
+                    "utc": "2026-10-16 02:57:28.002",
+                    "action": "Completed Step 6: Implement complete_task.py completion engine"
+                },
+                {
+                    "dhaka": "2026-10-16 08:57:49.412",
+                    "utc": "2026-10-16 02:57:49.412",
+                    "action": "Completed Step 7: Create task registry database"
+                },
+                {
+                    "dhaka": "2026-10-16 08:57:57.542",
+                    "utc": "2026-10-16 02:57:57.542",
+                    "action": "Completed Step 8: Create attachment storage mechanism"
+                },
+                {
+                    "dhaka": "2026-10-16 08:58:03.682",
+                    "utc": "2026-10-16 02:58:03.682",
+                    "action": "Completed Step 9: Design stewardship workflow"
+                },
+                {
+                    "dhaka": "2026-10-16 08:58:11.549",
+                    "utc": "2026-10-16 02:58:11.549",
+                    "action": "Completed Step 10: Develop dashboard architecture"
+                },
+                {
+                    "dhaka": "2026-10-16 08:58:24.847",
+                    "utc": "2026-10-16 02:58:24.847",
+                    "action": "Completed Step 11: Create responsive user interface"
+                },
+                {
+                    "dhaka": "2026-10-16 08:58:32.256",
+                    "utc": "2026-10-16 02:58:32.256",
+                    "action": "Completed Step 12: Verify data integrity"
+                },
+                {
+                    "dhaka": "2026-10-16 08:58:43.382",
+                    "utc": "2026-10-16 02:58:43.382",
+                    "action": "Completed Step 13: Perform integration testing"
+                },
+                {
+                    "dhaka": "2026-10-16 08:58:51.692",
+                    "utc": "2026-10-16 02:58:51.692",
+                    "action": "Completed Step 14: Prepare production deployment"
+                },
+                {
+                    "dhaka": "2026-10-16 08:59:21.201",
+                    "utc": "2026-10-16 02:59:21.201",
+                    "action": "Task completed and archived"
+                }
+            ],
+            "completed_dhaka": "2026-10-16 08:59:21.201",
+            "completed_utc": "2026-10-16 02:59:21.201",
+            "overview": "Task execution completed successfully.\n\nTask:\nStewardship Task System Foundation Completed\n\nAll planned implementation activities\nhave been completed and validated.\n\nSupporting documentation, evidence files, notes,\nand execution records have been successfully archived.\n\nCompletion Rate: 100%\n\nThis task is now considered ready for archival,\ninheritance, future reference, and stewardship review.",
+            "evaluation": {
+                "steps_total": 14,
+                "steps_completed": 14,
+                "completion_percentage": 100,
+                "notes": 3,
+                "attachments": 0,
+                "archive_ready": true
+            }
+        }
+    ]
+}

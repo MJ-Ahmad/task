@@ -1,6 +1,2276 @@
 {
     "tasks": [
         {
+            "task_id": "TASK-000030",
+            "registry": "REG-000030",
+            "status": "active",
+            "heading": "MJ-Ahmad Brand Ecosystem Executive Framework & Strategic Summary",
+            "description": "MJ-Ahmad Brand System Program-এর অধীনে সম্পন্ন সকল Branding, Repository, Production, Governance, Digital Presence এবং Ecosystem Expansion কার্যক্রমের মধ্যে পারস্পরিক সম্পর্ক, কৌশলগত অবস্থান, নির্ভরশীলতা, পরিচালন কাঠামো, ব্যবহারিক প্রয়োগ, দীর্ঘমেয়াদী রক্ষণাবেক্ষণ, সম্প্রসারণ সম্ভাবনা এবং ভবিষ্যৎ উন্নয়ন পথ নথিভুক্ত করা।\n\nএই প্রকল্পের উদ্দেশ্য হলো TASK-000024 থেকে TASK-000029 পর্যন্ত সম্পূর্ণ Brand Program-কে একটি Unified Strategic Framework-এ রূপান্তর করা, যাতে ভবিষ্যৎ পরিচালক, টিম, উত্তরাধিকারী, সহযোগী এবং ব্যবস্থাপকগণ সহজে বুঝতে পারেন কিভাবে Brand Vision থেকে শুরু করে Brand Expansion পর্যন্ত প্রতিটি উপাদান পরস্পরের সাথে সংযুক্ত এবং যৌথভাবে MJ-Ahmad Ecosystem পরিচালনা করে।\n\nএই Framework হবে MJ-Ahmad Brand Ecosystem-এর Executive Overview, Strategic Map, Governance Summary এবং Future Development Reference Document.",
+            "created_dhaka": "2026-10-25 04:59:12.409",
+            "created_utc": "2026-10-24 22:59:12.409",
+            "notes": [
+                "PROGRAM RELATIONSHIP MODEL\n\nTASK-000024\nBrand System\n        │\n        ▼\nTASK-000025\nAsset Repository\n        │\n        ▼\nTASK-000026\nAsset Production\n        │\n        ▼\nTASK-000027\nGovernance & Maintenance\n        │\n        ▼\nTASK-000028\nWebsite & Digital Presence\n        │\n        ▼\nTASK-000029\nEcosystem Growth & Expansion\n        │\n        ▼\nTASK-000030\nExecutive Framework & Strategic Summary\n\nPROGRAM FLOW\n\nVision\n   ↓\nStrategy\n   ↓\nRepository\n   ↓\nProduction\n   ↓\nGovernance\n   ↓\nDeployment\n   ↓\nExpansion\n   ↓\nExecutive Stewardship\n\nECOSYSTEM ARCHITECTURE\n\nMJ-Ahmad Ecosystem\n│\n├── Brand Identity\n├── Logo System\n├── Asset Repository\n├── Documentation System\n├── Governance System\n├── Website Platform\n├── GitHub Presence\n├── Social Presence\n├── Publication Platform\n├── Knowledge Base\n├── Quraner Feriwala Integration\n├── Future Projects\n├── Future Products\n├── Future Services\n├── Future Communities\n└── Future Institutions\n\nSTRATEGIC INTERPRETATION\n\nTASK-000024 defines WHAT the brand is.\n\nTASK-000025 defines WHERE brand assets are stored.\n\nTASK-000026 defines HOW brand assets are created.\n\nTASK-000027 defines HOW the brand is governed and maintained.\n\nTASK-000028 defines HOW the brand is presented publicly.\n\nTASK-000029 defines HOW the brand ecosystem grows and expands.\n\nTASK-000030 defines HOW the entire ecosystem is understood, stewarded and sustained long-term.\n\nLONG-TERM OUTCOME\n\nPersonal Identity\n        ↓\nProfessional Brand\n        ↓\nDocumented Brand System\n        ↓\nManaged Asset Repository\n        ↓\nProduction-Ready Asset Library\n        ↓\nGoverned Brand Platform\n        ↓\nPublic Digital Presence\n        ↓\nEcosystem Growth Framework\n        ↓\nInstitutional Readiness\n        ↓\nKnowledge Preservation\n        ↓\nStewardship Legacy\n\nFINAL SUCCESS DEFINITION\n\nThe MJ-Ahmad Ecosystem becomes a documented, governed, scalable and inheritable brand infrastructure capable of supporting personal initiatives, technical projects, GitHub repositories, documentation platforms, publications, Quraner Feriwala activities, future services, future products, communities and institutional development while maintaining consistency, traceability, sustainability and stewardship across generations.\n\nEXECUTIVE OUTCOME\n\nUpon completion of TASK-000024 through TASK-000030, MJ-Ahmad will possess:\n\n- A Strategic Brand Foundation\n- A Structured Asset Repository\n- A Complete Asset Production System\n- A Governance and Maintenance Framework\n- A Unified Website and Digital Presence\n- An Ecosystem Growth Framework\n- An Executive Stewardship Framework\n- A Long-Term Knowledge Preservation Model\n- A Future Institution Readiness Model\n- A Fully Inheritable Brand Ecosystem\n\nSuccess Criteria: A complete executive-level reference framework exists that explains how the entire MJ-Ahmad Brand Ecosystem operates, evolves, scales, is governed, maintained and preserved over time. Upon completion, all branding initiatives, repositories, assets, governance systems, digital platforms and future expansions are documented as a single coherent ecosystem with clear relationships, responsibilities, lifecycle definitions, continuity mechanisms and strategic growth pathways."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define Program Scope",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Define Executive Vision Summary",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define Ecosystem Purpose Statement",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Map Brand System Relationships",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Map Repository Relationships",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Map Asset Production Relationships",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Map Governance Relationships",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Map Digital Presence Relationships",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Map Ecosystem Expansion Relationships",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Create End-To-End Lifecycle Diagram",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Define Strategic Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Define Operational Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Define Governance Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Define Asset Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Define Documentation Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Define Public Presence Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Define Expansion Dependencies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Create Ecosystem Architecture Overview",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Create Component Relationship Matrix",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Create Information Flow Map",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Create Asset Flow Map",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Create Governance Flow Map",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Create Brand Lifecycle Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Create Stewardship Lifecycle Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Create Maintenance Lifecycle Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Define Authority Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Define Decision Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Define Ownership Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "Define Continuity Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Define Succession Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "Define Knowledge Preservation Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "Define Repository Preservation Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Define Asset Preservation Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Define Documentation Preservation Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Define Brand Growth Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Define Ecosystem Growth Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Define Multi-Project Integration Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Define Future Brand Evolution Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Define Future Version Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Define Institutional Readiness Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Define Ecosystem Sustainability Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Define Risk Management Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Identify Strategic Risks",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Identify Operational Risks",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Identify Governance Risks",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Identify Branding Risks",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "Identify Repository Risks",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "Identify Continuity Risks",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "Define Mitigation Strategies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Create Executive Dashboard Concept",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Create Strategic KPI Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Create Program Health Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Review Entire Brand Program",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "Validate Ecosystem Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Validate Governance Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Validate Growth Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Publish Executive Summary",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Publish Ecosystem Blueprint",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "Publish Strategic Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 60,
+                    "title": "Publish Stewardship Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 61,
+                    "title": "Release MJ-Ahmad Brand Ecosystem Executive Framework v1.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:59:12.409",
+                    "utc": "2026-10-24 22:59:12.409",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 61,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000029",
+            "registry": "REG-000029",
+            "status": "active",
+            "heading": "MJ-Ahmad Brand Expansion & Ecosystem Growth Program",
+            "description": "MJ-Ahmad Brand System, Branding Repository, Asset Production, Governance Framework এবং Digital Presence Platform প্রতিষ্ঠিত হওয়ার পর MJ-Ahmad Ecosystem কে দীর্ঘমেয়াদে সম্প্রসারণ, সংহতকরণ এবং বহুমাত্রিক ব্র্যান্ড প্ল্যাটফর্মে উন্নীত করার জন্য একটি Strategic Growth Program বাস্তবায়ন করা।\n\nএই প্রকল্পের উদ্দেশ্য হলো MJ-Ahmad কে একটি Personal Identity থেকে একটি Structured Ecosystem Identity-তে রূপান্তর করা, যেখানে Projects, Products, Documentation, Publications, Communities, Educational Initiatives, Open Source Activities, Quraner Feriwala এবং ভবিষ্যৎ প্রতিষ্ঠানসমূহ একটি একীভূত Brand Architecture-এর অধীনে পরিচালিত হবে।\n\nএই Expansion Program ভবিষ্যৎ ব্র্যান্ড বিকাশ, নতুন উদ্যোগ সংযোজন, ডিজিটাল সম্পদ সম্প্রসারণ, কমিউনিটি গঠন, জ্ঞানভিত্তিক সম্পদ প্রকাশ এবং বহুমাত্রিক Brand Presence প্রতিষ্ঠার জন্য Strategic Framework হিসেবে কাজ করবে.",
+            "created_dhaka": "2026-10-25 04:54:02.982",
+            "created_utc": "2026-10-24 22:54:02.982",
+            "notes": [
+                "Success Criteria: MJ-Ahmad evolves from a single personal brand into a scalable and documented ecosystem capable of supporting multiple projects, products, publications, educational initiatives, open-source activities, community programs and future institutions under a unified strategic brand architecture. Upon completion, a structured framework exists for sustainable growth, governance, collaboration, expansion and long-term stewardship across all present and future ecosystem components."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define Ecosystem Growth Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Define Ecosystem Vision",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define Long-Term Expansion Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define Brand Portfolio Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Define Sub-Brand Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Define Project Classification System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Define Initiative Classification System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Create Ecosystem Governance Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Create Brand Relationship Map",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Create Project Registry Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Create Product Registry Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Create Documentation Ecosystem Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Create Knowledge Base Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Create Publication Ecosystem Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Create Educational Content Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Create Open Source Ecosystem Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Create GitHub Organization Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Create Repository Ecosystem Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Create Technical Project Showcase Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Create Quraner Feriwala Expansion Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Create Service Initiative Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Create Community Development Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Create Contributor Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Create Partnership Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Create Collaboration Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Create Ecosystem Naming Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Create Ecosystem Identity Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Create Asset Sharing Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "Create Cross-Branding Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Create Ecosystem Communication Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "Create Public Engagement Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "Create Content Publishing Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Create Article Publishing Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Create Documentation Publishing Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Create Research Publishing Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Create Digital Library Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Create Archive Growth Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Create Asset Discovery System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Create Search and Index Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Create Community Knowledge Repository",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Create Ecosystem Dashboard Concept",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Create Metrics and Growth Indicators",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Create Expansion Review Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Create Annual Growth Review Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Create Ecosystem Roadmap v2.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Create Ecosystem Roadmap v3.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "Create Future Institution Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "Create Future Foundation Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "Create Future Platform Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Review Existing Ecosystem Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Identify Growth Opportunities",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Prioritize Strategic Initiatives",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Create Expansion Backlog",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "Validate Ecosystem Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Publish Ecosystem Handbook",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Publish Growth Framework",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Publish Expansion Baseline",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Release MJ-Ahmad Ecosystem Growth Program v1.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:54:02.982",
+                    "utc": "2026-10-24 22:54:02.982",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 58,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000028",
+            "registry": "REG-000028",
+            "status": "active",
+            "heading": "MJ-Ahmad Website & Digital Presence Program",
+            "description": "MJ-Ahmad Brand System, Branding Repository এবং Branding Asset Production সম্পন্ন হওয়ার পর MJ-Ahmad এর জন্য একটি সমন্বিত Digital Presence Ecosystem প্রতিষ্ঠা করা। এই প্রকল্পের উদ্দেশ্য হলো Website, GitHub Presence, Social Presence, Search Visibility, Documentation Portal, Digital Publications এবং Professional Identity Platforms জুড়ে একটি একীভূত, পেশাদার এবং দীর্ঘমেয়াদী Online Presence তৈরি করা।\n\nএই প্রকল্প একটি Unified Public Brand Experience নিশ্চিত করবে, যেখানে MJ-Ahmad এর Branding, Content, Documentation, Projects, Publications, Technical Work, Stewardship Principles এবং Future Initiatives একটি সুসংগঠিত ডিজিটাল পরিবেশে উপস্থাপিত হবে।",
+            "created_dhaka": "2026-10-25 04:52:58.408",
+            "created_utc": "2026-10-24 22:52:58.408",
+            "notes": [
+                "Success Criteria: MJ-Ahmad possesses a professional and unified digital presence consisting of a brand-aligned website, project showcase, documentation portal, publication system, GitHub integration, search-optimized content structure and public-facing identity platform. Upon completion, visitors can discover, understand and engage with MJ-Ahmad, associated projects, documentation, publications and initiatives through a consistent and professionally managed digital ecosystem."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Define Digital Presence Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Define Public Brand Positioning",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define Website Objectives",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define Audience Profiles",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Define Content Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Define Information Architecture",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Create Website Sitemap",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Create Navigation Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Create Homepage Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Create About Page Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Create Brand Story Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Create Projects Page Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Create Documentation Portal Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Create Publications Page Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Create Quraner Feriwala Integration Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Create Contact Page Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Create Search Visibility Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Configure Domain Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Configure Subdomain Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Create Website Design System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Apply Brand Identity Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Apply Typography Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Apply Color Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Build Homepage",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Build About Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Build Projects Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Build Documentation Portal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Build Publications Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "Build Contact Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Build Privacy Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "Build Terms Page",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "Create GitHub Pages Integration",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Create Repository Showcase System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Create Open Source Project Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Create Documentation Search System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Create SEO Foundation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Create Metadata Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Configure Open Graph Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Configure Social Preview Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Configure Favicon System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Configure Analytics Strategy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Configure Performance Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Configure Accessibility Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Configure Mobile Experience Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Test Homepage Experience",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Test Navigation System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "Test Documentation Experience",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "Test Mobile Experience",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "Test Accessibility Compliance",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Test Brand Consistency",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Review Public Content",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Review Technical Content",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Review SEO Configuration",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "Review GitHub Integration",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Review Documentation Portal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Create Launch Checklist",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Perform Pre-Launch Audit",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Publish Website v1.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "Publish Digital Presence Baseline",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 60,
+                    "title": "Create Maintenance Procedures",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 61,
+                    "title": "Create Content Update Calendar",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 62,
+                    "title": "Create Website Governance Register",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 63,
+                    "title": "Release MJ-Ahmad Digital Presence v1.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:52:58.408",
+                    "utc": "2026-10-24 22:52:58.408",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 63,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000027",
+            "registry": "REG-000027",
+            "status": "active",
+            "heading": "MJ-Ahmad Brand Governance & Maintenance Program",
+            "description": "MJ-Ahmad Brand System v1.0, Branding Repository এবং Branding Assets Production Phase সম্পন্ন হওয়ার পর ব্র্যান্ডের ধারাবাহিকতা, সামঞ্জস্য, গুণমান, ভার্সন নিয়ন্ত্রণ, সম্পদ ব্যবস্থাপনা এবং দীর্ঘমেয়াদী রক্ষণাবেক্ষণ নিশ্চিত করার জন্য একটি Brand Governance Framework প্রতিষ্ঠা করা।\n\nএই প্রকল্পের উদ্দেশ্য হলো MJ-Ahmad ব্র্যান্ডকে একটি Living System হিসেবে পরিচালনা করা, যেখানে Branding Assets, Documentation, Color Standards, Typography Standards, Logo Systems, Publication Assets, GitHub Assets এবং Co-Branding Assets নিয়মিত পর্যবেক্ষণ, পর্যালোচনা, আপডেট এবং সংরক্ষণ করা হবে।\n\nএই Governance Program ভবিষ্যতের সকল Branding Activity-এর জন্য Authority Layer হিসেবে কাজ করবে এবং Branding সম্পর্কিত পরিবর্তন, অনুমোদন, রিলিজ, আর্কাইভিং এবং উন্নয়ন প্রক্রিয়াকে মানসম্মত করবে।",
+            "created_dhaka": "2026-10-25 04:51:36.258",
+            "created_utc": "2026-10-24 22:51:36.258",
+            "notes": [
+                "Success Criteria: MJ-Ahmad branding assets, repositories, documentation and visual identity are governed through documented policies, review processes, stewardship responsibilities, quality controls, release procedures and maintenance standards. Upon completion, the brand becomes a continuously managed and professionally governed ecosystem capable of long-term growth, delegation, institutional adoption and future version evolution without loss of consistency, quality or historical traceability."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Establish Brand Governance Charter",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Define Brand Ownership Model",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Define Asset Stewardship Rules",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Define Branding Authority Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Create Brand Change Management Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Create Asset Review Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Create Logo Update Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Create Typography Update Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Create Color Update Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Create Documentation Standards Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Create Naming Convention Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Create Version Control Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Create Release Management Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Create Asset Approval Workflow",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Create Asset Lifecycle Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Create Archive Retention Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Create Deprecation Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Create Legacy Asset Management Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Create Co-Branding Governance Policy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Create Brand Compliance Checklist",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Create Internal Audit Checklist",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Create Repository Maintenance Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Create Metadata Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Create File Organization Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Create Backup Management Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Create Recovery Procedures",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Create Asset Integrity Verification Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Create Brand Quality Metrics",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "Create Visual Consistency Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Create Communication Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "Create Publication Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "Create Documentation Review Cycle",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Create Quarterly Brand Review Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Create Annual Brand Assessment Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Create Asset Health Monitoring Process",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Review Existing Brand Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Review Documentation Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Review Social Branding Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Review GitHub Branding Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Review Publication Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Review Co-Brand Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Review Archive Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Identify Branding Gaps",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Prepare Improvement Backlog",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Prioritize Improvement Initiatives",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Perform Governance Validation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "Update Branding Policies",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "Update Repository Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "Update Asset Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Publish Governance Handbook",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Publish Maintenance Procedures",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Publish Review Calendar",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Publish Governance Baseline",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "Create Continuous Improvement Register",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Create Future Expansion Register",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Create Next Version Roadmap",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Archive Governance Release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Release Brand Governance v1.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "Establish Ongoing Maintenance Cycle",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:51:36.258",
+                    "utc": "2026-10-24 22:51:36.258",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 59,
+                "percentage": 0
+            }
+        },
+        {
+            "task_id": "TASK-000026",
+            "registry": "REG-000026",
+            "status": "active",
+            "heading": "MJ Branding Asset Production & Implementation",
+            "description": "MJ-Ahmad Brand System v1.0 এর অধীনে পরিকল্পিত সকল ব্র্যান্ডিং উপাদান বাস্তবায়ন, ডিজাইন, উৎপাদন, পর্যালোচনা এবং প্রকাশ করা। এই প্রকল্পের উদ্দেশ্য হলো Branding Strategy এবং Branding Repository Phase সম্পন্ন হওয়ার পর প্রকৃত Logo Assets, Identity Assets, Documentation Assets, Social Assets, GitHub Assets, Publication Assets এবং Distribution Packages তৈরি করা।\n\nএই প্রকল্প সম্পন্ন হলে MJ-Ahmad এর জন্য একটি সম্পূর্ণ Production Ready Brand Identity Package প্রস্তুত হবে যা Website, Documentation, GitHub, Software, Publications, Reports, Social Media, Mobile Applications এবং ভবিষ্যৎ প্রতিষ্ঠানিক কার্যক্রমে সরাসরি ব্যবহারযোগ্য হবে।",
+            "created_dhaka": "2026-10-25 04:50:40.081",
+            "created_utc": "2026-10-24 22:50:40.081",
+            "notes": [
+                "Success Criteria: All branding assets defined in MJ-Ahmad Brand System v1.0 and MJ Branding Asset Repository Development must be physically created, properly named, documented, exported, validated and stored within mj/assets/branding. Upon completion, the MJ-Ahmad brand will possess a complete production-ready identity system including logos, wordmarks, color standards, typography standards, documentation assets, GitHub assets, social assets, publication assets, seals, exports and release packages suitable for long-term professional use."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Create Brand Foundation Deliverables",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Create Brand Story Deliverables",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Create Brand Narrative Deliverables",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Create Logo Concepts",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Create Logo Concept Reviews",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Select Final Logo Direction",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Create Logo Geometry System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Create Master Logo SVG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Create Master Logo PNG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Create Master Logo Dark Variant",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Create Master Logo Light Variant",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Create Monogram Logo SVG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Create Monogram Logo PNG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Create Icon Logo SVG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Create Icon Logo PNG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Create Wordmark SVG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Create Wordmark PNG",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Create Watermark Logo",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Create Round Seal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Create Square Seal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Create Signature Stamp",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Create Responsive XL Logo",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Create Responsive Large Logo",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Create Responsive Medium Logo",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Create Responsive Small Logo",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Create Responsive XS Logo",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Create Primary Color Palette",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Create Secondary Color Palette",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "Create Accent Color Palette",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Create Light Theme Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "Create Dark Theme Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "Create Premium Theme Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Create Technical Theme Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Create Typography Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Create Heading Typography Rules",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Create Body Typography Rules",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Create Font Pairing System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Create Safe Area Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Create Minimum Size Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Create Improper Usage Examples",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Create Favicon 16",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Create Favicon 32",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Create Favicon 48",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Create Favicon 64",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Create Favicon 128",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Create Favicon 256",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "Create Favicon 512",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "Create App Icons",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "Create GitHub Avatar",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Create GitHub Banner",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Create Repository Branding Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Create Social Profile Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Create Social Cover Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "Create Document Cover Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Create Header Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Create Footer Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Create PDF Branding Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Create Publication Branding Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "Create Quraner Feriwala Co-Brand Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 60,
+                    "title": "Create Brand Guideline Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 61,
+                    "title": "Perform Production QA",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 62,
+                    "title": "Perform Branding Validation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 63,
+                    "title": "Produce Export Packages",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 64,
+                    "title": "Publish Brand Release Package",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:50:40.081",
+                    "utc": "2026-10-24 22:50:40.081",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 64,
+                "percentage": 0
+            }
+        },
+        {
             "task_id": "TASK-000025",
             "registry": "REG-000025",
             "status": "active",

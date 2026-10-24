@@ -1,6 +1,453 @@
 {
     "tasks": [
         {
+            "task_id": "TASK-000024",
+            "registry": "REG-000024",
+            "status": "active",
+            "heading": "MJ-Ahmad Brand System v1.0 - Full Identity Development Project",
+            "description": "MJ-Ahmad এর জন্য একটি পূর্ণাঙ্গ, পেশাদার, দীর্ঘমেয়াদী এবং উত্তরাধিকারযোগ্য (Inheritable) ব্র্যান্ড পরিচয় ব্যবস্থা নির্মাণ করা। এই প্রকল্পের উদ্দেশ্য হলো এমন একটি Brand System তৈরি করা যা Personal Branding, Technical Projects, GitHub, Documentation, Quraner Feriwala, Website, Software, Mobile Applications, Digital Assets, Print Assets এবং ভবিষ্যৎ প্রতিষ্ঠানিক কার্যক্রমে সমানভাবে ব্যবহার করা যাবে।\n\nএই প্রকল্পের চূড়ান্ত ফলাফল হবে একটি সম্পূর্ণ Brand Identity Package, যেখানে Logo System, Typography System, Color System, Documentation System, GitHub Branding, Social Branding, Seal System, Asset Library এবং Brand Guidelines অন্তর্ভুক্ত থাকবে।\n\nPROJECT OBJECTIVES\n\n- MJ-Ahmad এর জন্য স্থায়ী ব্র্যান্ড পরিচয় প্রতিষ্ঠা করা\n- বর্তমান MJ লোগোকে পেশাদার মানে উন্নীত করা\n- Responsive Logo System তৈরি করা\n- Digital এবং Print Friendly Branding তৈরি করা\n- GitHub ও Software Projects এর জন্য উপযোগী Branding তৈরি করা\n- Quraner Feriwala এর সাথে Co-Branding সক্ষমতা তৈরি করা\n- দীর্ঘমেয়াদী Brand Governance System প্রতিষ্ঠা করা\n\nPHASE 01\nBRAND FOUNDATION\n\nSTEP 01\nBrand Name Definition\n\nTASK\nBrand Name এবং Naming Structure নির্ধারণ।\n\nSUBTASKS\n- Primary Brand Name নির্ধারণ\n- Official Name নির্ধারণ\n- Public Name নির্ধারণ\n- Short Name নির্ধারণ\n- URL Friendly Name নির্ধারণ\n- Repository Friendly Name নির্ধারণ\n\nOUTPUT\nbrand-name.md\n\n--------------------------------------------------\n\nSTEP 02\nBrand Mission Definition\n\nTASK\nব্র্যান্ডের উদ্দেশ্য লিখা।\n\nSUBTASKS\n- Why does MJ-Ahmad exist?\n- Long-term purpose\n- Service purpose\n- Community purpose\n- Personal purpose\n\nOUTPUT\nbrand-mission.md\n\n--------------------------------------------------\n\nSTEP 03\nBrand Vision Definition\n\nTASK\nআগামী 10-20 বছরের লক্ষ্য লিখা।\n\nSUBTASKS\n- Future identity\n- Future impact\n- Future ecosystem\n- Future institution\n\nOUTPUT\nbrand-vision.md\n\n--------------------------------------------------\n\nSTEP 04\nCore Values Definition\n\nTASK\nমূল নীতিমালা নির্ধারণ।\n\nSUBTASKS\n- Stewardship\n- Trust\n- Honesty\n- Technical Excellence\n- Documentation\n- Knowledge Sharing\n- Service\n\nOUTPUT\ncore-values.md\n\n--------------------------------------------------\n\nSTEP 05\nBrand Personality\n\nTASK\nব্র্যান্ডের চরিত্র নির্ধারণ।\n\nSUBTASKS\n- Professional\n- Technical\n- Modern\n- Minimal\n- Islamic\n- Structured\n- Trustworthy\n\nOUTPUT\nbrand-personality.md\n\n==================================================\n\nPHASE 02\nLOGO RESEARCH & AUDIT\n\nSTEP 06\n\nCurrent Logo Collection\n\nTASK\nবর্তমান লোগোর সোর্স সংগ্রহ।\n\nSUBTASKS\n- Original image\n- Versions\n- Previous edits\n- Existing uses\n\nOUTPUT\nlogo-archive/\n\n--------------------------------------------------\n\nSTEP 07\n\nLogo Audit\n\nTASK\nবর্তমান লোগো বিশ্লেষণ।\n\nSUBTASKS\n- Symmetry Review\n- Shape Review\n- Balance Review\n- Readability Review\n- Scaling Review\n- Print Review\n- Digital Review\n\nOUTPUT\nlogo-audit.md\n\n--------------------------------------------------\n\nSTEP 08\n\nCompetitor Analysis\n\nTASK\nএকই ধরনের Personal Brand এবং Technology Brands বিশ্লেষণ।\n\nSUBTASKS\n- GitHub Personality Brands\n- Developer Brands\n- Technology Monograms\n- Personal Logos\n\nOUTPUT\nlogo-research.md\n\n==================================================\n\nPHASE 03\nLOGO CONCEPT DEVELOPMENT\n\nSTEP 09\n\nLogo Symbol Meaning\n\nTASK\nলোগোর অর্থ নির্ধারণ।\n\nSUBTASKS\n- M meaning\n- J meaning\n- Spiral meaning\n- Curvature meaning\n- Open shape meaning\n\nOUTPUT\nlogo-meaning.md\n\n--------------------------------------------------\n\nSTEP 10\n\nLogo Architecture Planning\n\nTASK\nলোগোর স্তর নির্ধারণ।\n\nSUBTASKS\n\nCreate:\n\n- Master Logo\n- Monogram Logo\n- Icon Logo\n- Wordmark\n- Seal Logo\n- Watermark Logo\n\nOUTPUT\nlogo-architecture.md\n\n--------------------------------------------------\n\nSTEP 11\n\nSketch Concepts\n\nTASK\n\nকমপক্ষে 10টি প্রাথমিক স্কেচ।\n\nSUBTASKS\n\nSketch-01\nSketch-02\nSketch-03\nSketch-04\nSketch-05\nSketch-06\nSketch-07\nSketch-08\nSketch-09\nSketch-10\n\nOUTPUT\nconcept-sketches/\n\n==================================================\n\nPHASE 04\nLOGO CONSTRUCTION SYSTEM\n\nSTEP 12\n\nGrid System Design\n\nTASK\n\nLogo Grid Definition।\n\nSUBTASKS\n\n- Base unit\n- Grid size\n- Alignment rules\n- Construction rules\n\nOUTPUT\nlogo-grid-guide.md\n\n--------------------------------------------------\n\nSTEP 13\n\nGeometry Rules\n\nTASK\n\nজ্যামিতিক নিয়ম নির্ধারণ।\n\nSUBTASKS\n\n- Radius\n- Curvature\n- Angles\n- Symmetry\n- Proportion\n\nOUTPUT\ngeometry-system.md\n\n--------------------------------------------------\n\nSTEP 14\n\nMaster Logo Construction\n\nTASK\n\nFinal Master Logo তৈরি।\n\nSUBTASKS\n\n- Build vector\n- Review\n- Adjust\n- Finalize\n\nOUTPUT\nmaster-logo.svg\n\n==================================================\n\nPHASE 05\nRESPONSIVE LOGO SYSTEM\n\nSTEP 15\n\nXL Version\n\nTASK\n\nFull Brand Presentation Logo।\n\nOUTPUT\nlogo-xl.svg\n\n--------------------------------------------------\n\nSTEP 16\n\nLarge Version\n\nTASK\n\nStandard Official Logo।\n\nOUTPUT\nlogo-large.svg\n\n--------------------------------------------------\n\nSTEP 17\n\nMedium Version\n\nTASK\n\nMonogram Version।\n\nOUTPUT\nlogo-medium.svg\n\n--------------------------------------------------\n\nSTEP 18\n\nSmall Version\n\nTASK\n\nSimplified Version।\n\nOUTPUT\nlogo-small.svg\n\n--------------------------------------------------\n\nSTEP 19\n\nExtra Small Version\n\nTASK\n\nFavicon/Icon Version।\n\nOUTPUT\nlogo-xs.svg\n\n==================================================\n\nPHASE 06\nWORDMARK SYSTEM\n\nSTEP 20\n\nTypography Research\n\nTASK\n\nSuitable fonts নির্বাচন।\n\nSUBTASKS\n\n- English fonts\n- Bangla fonts\n- Arabic fonts\n\nOUTPUT\nfont-research.md\n\n--------------------------------------------------\n\nSTEP 21\n\nWordmark Design\n\nTASK\n\nMJ-Ahmad Wordmark তৈরি।\n\nOUTPUT\nwordmark.svg\n\n==================================================\n\nPHASE 07\nCOLOR SYSTEM\n\nSTEP 22\n\nPrimary Colors\n\nTASK\n\nমূল ব্র্যান্ড কালার নির্ধারণ।\n\nOUTPUT\nprimary-colors.md\n\n--------------------------------------------------\n\nSTEP 23\n\nSecondary Colors\n\nTASK\n\nসহায়ক কালার নির্ধারণ।\n\nOUTPUT\nsecondary-colors.md\n\n--------------------------------------------------\n\nSTEP 24\n\nTheme Systems\n\nTASK\n\nTheme variants তৈরি।\n\nSUBTASKS\n\n- Light Theme\n- Dark Theme\n- Premium Theme\n- Islamic Theme\n- Technical Theme\n\nOUTPUT\ncolor-system.json\n\n==================================================\n\nPHASE 08\nLOGO USAGE SYSTEM\n\nSTEP 25\n\nSafe Area Definition\n\nOUTPUT\nsafe-area-guide.md\n\n--------------------------------------------------\n\nSTEP 26\n\nMinimum Size Definition\n\nOUTPUT\nsize-guide.md\n\n--------------------------------------------------\n\nSTEP 27\n\nIncorrect Usage Examples\n\nOUTPUT\nmisuse-guide.md\n\n==================================================\n\nPHASE 09\nDIGITAL ASSET SYSTEM\n\nSTEP 28\n\nFavicon Set\n\nOUTPUT\n\nfavicon-16.png\nfavicon-32.png\nfavicon-48.png\nfavicon-64.png\nfavicon-128.png\nfavicon-256.png\nfavicon-512.png\n\n--------------------------------------------------\n\nSTEP 29\n\nApp Icon Set\n\nOUTPUT\n\napp-icons/\n\n--------------------------------------------------\n\nSTEP 30\n\nSocial Media Package\n\nOUTPUT\n\nsocial-brand-kit/\n\n==================================================\n\nPHASE 10\nGITHUB BRANDING\n\nSTEP 31\n\nGitHub Avatar\n\nOUTPUT\n\ngithub-avatar.png\n\n--------------------------------------------------\n\nSTEP 32\n\nGitHub Banner\n\nOUTPUT\n\ngithub-banner.png\n\n--------------------------------------------------\n\nSTEP 33\n\nRepository Branding\n\nOUTPUT\n\nrepository-kit/\n\n==================================================\n\nPHASE 11\nDOCUMENT BRANDING\n\nSTEP 34\n\nCover Page System\n\nOUTPUT\n\ndocument-cover-template\n\n--------------------------------------------------\n\nSTEP 35\n\nHeader System\n\nOUTPUT\n\nheader-template\n\n--------------------------------------------------\n\nSTEP 36\n\nFooter System\n\nOUTPUT\n\nfooter-template\n\n--------------------------------------------------\n\nSTEP 37\n\nWatermark System\n\nOUTPUT\n\nwatermark.svg\n\n==================================================\n\nPHASE 12\nSEAL & STAMP SYSTEM\n\nSTEP 38\n\nRound Seal\n\nOUTPUT\n\nround-seal.svg\n\n--------------------------------------------------\n\nSTEP 39\n\nSquare Seal\n\nOUTPUT\n\nsquare-seal.svg\n\n--------------------------------------------------\n\nSTEP 40\n\nSignature Stamp\n\nOUTPUT\n\nsignature-stamp.svg\n\n==================================================\n\nPHASE 13\nQURANER FERIWALA CO-BRANDING\n\nSTEP 41\n\nHorizontal Co-Brand\n\nOUTPUT\n\nco-brand-horizontal.svg\n\n--------------------------------------------------\n\nSTEP 42\n\nVertical Co-Brand\n\nOUTPUT\n\nco-brand-vertical.svg\n\n--------------------------------------------------\n\nSTEP 43\n\nPublication Branding\n\nOUTPUT\n\npublication-brand-kit/\n\n==================================================\n\nPHASE 14\nBRAND DOCUMENTATION\n\nSTEP 44\n\nBrand Story\n\nOUTPUT\n\nbrand-story.md\n\n--------------------------------------------------\n\nSTEP 45\n\nBrand Narrative\n\nOUTPUT\n\nbrand-narrative.md\n\n--------------------------------------------------\n\nSTEP 46\n\nBrand Guidelines\n\nOUTPUT\n\nbrand-guidelines.pdf\n\n==================================================\n\nPHASE 15\nEXPORT SYSTEM\n\nSTEP 47\n\nSVG Export\n\nOUTPUT\n\nsvg-package/\n\n--------------------------------------------------\n\nSTEP 48\n\nPNG Export\n\nOUTPUT\n\npng-package/\n\n--------------------------------------------------\n\nSTEP 49\n\nPDF Export\n\nOUTPUT\n\npdf-package/\n\n--------------------------------------------------\n\nSTEP 50\n\nSource Backup\n\nOUTPUT\n\nsource-package/\n\n==================================================\n\nPHASE 16\nQUALITY ASSURANCE\n\nSTEP 51\n\nPrint Testing\n\nOUTPUT\n\nprint-test-report.md\n\n--------------------------------------------------\n\nSTEP 52\n\nMobile Testing\n\nOUTPUT\n\nmobile-test-report.md\n\n--------------------------------------------------\n\nSTEP 53\n\nWebsite Testing\n\nOUTPUT\n\nweb-test-report.md\n\n--------------------------------------------------\n\nSTEP 54\n\nGitHub Testing\n\nOUTPUT\n\ngithub-test-report.md\n\n==================================================\n\nPHASE 17\nFINAL RELEASE\n\nSTEP 55\n\nAsset Review\n\nTASK\n\nসব ফাইল যাচাই।\n\n--------------------------------------------------\n\nSTEP 56\n\nDocumentation Review\n\nTASK\n\nসব ডকুমেন্ট যাচাই।\n\n--------------------------------------------------\n\nSTEP 57\n\nVersioning\n\nTASK\n\nVersion Tag:\nMJ-Ahmad Brand System v1.0\n\n--------------------------------------------------\n\nSTEP 58\n\nRelease Packaging\n\nOUTPUT\n\nMJ-Ahmad-Brand-System-v1.0.zip\n\n--------------------------------------------------\n\nSTEP 59\n\nArchive Creation\n\nOUTPUT\n\nbrand-system-archive/\n\n--------------------------------------------------\n\nSTEP 60\n\nOfficial Release\n\nSTATUS\n\nCOMPLETE\n\nFINAL DELIVERABLES\n\n- Brand Foundation\n- Brand Mission\n- Brand Vision\n- Core Values\n- Brand Personality\n- Logo System\n- Master Logo\n- Monogram Logo\n- Icon Logo\n- Wordmark\n- Color System\n- Typography System\n- Responsive Logo System\n- GitHub Branding Kit\n- Social Branding Kit\n- Document Branding Kit\n- Seal System\n- Co-Branding System\n- Brand Story\n- Brand Guidelines\n- Asset Library\n- Source Library\n- Final Release Package\n\nSUCCESS CRITERIA\n\nMJ-Ahmad ব্র্যান্ডকে এমন একটি সুসংগঠিত, পেশাদার, প্রযুক্তিগতভাবে ব্যবহারযোগ্য এবং ভবিষ্যৎ-প্রস্তুত পরিচয় ব্যবস্থায় রূপান্তর করা, যা ব্যক্তি, প্রকল্প, প্রতিষ্ঠান, ডকুমেন্টেশন, সফটওয়্যার এবং সামাজিক উদ্যোগের জন্য একইসাথে কার্যকরভাবে ব্যবহৃত হতে পারে।",
+            "created_dhaka": "2026-10-25 04:22:25.213",
+            "created_utc": "2026-10-24 22:22:25.213",
+            "notes": [
+                "MJ-Ahmad Brand System v1.0 একটি Strategic Brand Development Initiative, যার লক্ষ্য হলো MJ-Ahmad নামকে একটি সুপরিকল্পিত, সুসংগঠিত এবং দীর্ঘমেয়াদে টেকসই Professional Brand Identity-তে রূপান্তর করা। এই প্রকল্পের মাধ্যমে একটি পূর্ণাঙ্গ Brand Ecosystem নির্মাণ করা হবে, যা ব্যক্তি, প্রকল্প, প্রযুক্তি, ডকুমেন্টেশন, প্রকাশনা, সফটওয়্যার, ডিজিটাল উপস্থিতি এবং ভবিষ্যৎ প্রতিষ্ঠানিক কার্যক্রমের জন্য একীভূত পরিচয় (Unified Identity) প্রদান করবে।\n\nএই Roadmap-এর প্রতিটি Step একটি নির্দিষ্ট Branding Component-এর উপর কেন্দ্রীভূত। Brand Foundation, Identity Strategy, Logo Architecture, Visual System, Typography, Color Standards, Documentation Assets, Digital Presence, GitHub Branding, Social Media Assets, Official Seals, Co-Branding Standards, Usage Policies এবং Governance Framework ধাপে ধাপে নির্মাণ ও নথিভুক্ত করা হবে।\n\nসমস্ত Step সফলভাবে সম্পন্ন হওয়ার পর MJ-Ahmad-এর জন্য একটি Complete, Scalable, Consistent এবং Professionally Governed Brand System প্রতিষ্ঠিত হবে। এর ফলে ভবিষ্যতের যেকোনো Website, Software, Open Source Project, Documentation Platform, Publication, Social Presence অথবা Organizational Initiative-এ একই মান, একই ভিজ্যুয়াল পরিচয় এবং একই ব্র্যান্ড নীতিমালা অনুসরণ করে কাজ করা সম্ভব হবে।\n\nPROJECT OUTCOME\n\nA fully documented and professionally managed brand ecosystem that includes:\n\n- Strategic Brand Foundation\n- Documented Brand Values and Vision\n- Professional Logo Architecture\n- Responsive Logo System\n- Official Wordmark System\n- Typography Standards\n- Color Standards\n- Digital and Print Asset Library\n- GitHub Branding System\n- Social Media Branding System\n- Documentation Branding Framework\n- Official Seal and Authentication Assets\n- Co-Branding Framework\n- Brand Governance Guidelines\n- Asset Management Structure\n- Long-Term Brand Maintenance Standards\n\nKEY BENEFITS\n\n- Establishes a strong, recognizable and trustworthy professional identity.\n- Creates a consistent visual and communication standard across all platforms.\n- Improves credibility for technical, academic, organizational and public-facing work.\n- Enables efficient reuse of branding assets without repeated redesign efforts.\n- Supports future expansion into products, projects, services and institutions.\n- Provides a centralized and documented asset system for long-term sustainability.\n- Reduces brand inconsistency and improves professional presentation quality.\n- Ensures scalability from personal use to organizational implementation.\n- Facilitates collaboration, delegation and future stewardship through proper documentation.\n- Transforms MJ-Ahmad from a simple personal identity into a structured, documented and inheritable brand ecosystem.\n\nSUCCESS DEFINITION\n\nThe project will be considered successful when MJ-Ahmad possesses a complete, documented, reusable, scalable and professionally governed Brand Identity System that can be confidently applied across digital platforms, printed materials, software products, documentation repositories, educational initiatives, organizational activities and future institutional developments while maintaining a single, unified and professional brand presence."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Brand Name Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Brand Mission Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Brand Vision Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Core Values Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Brand Personality",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Current Logo Collection",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Logo Audit",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Competitor Analysis",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Logo Symbol Meaning",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Logo Architecture Planning",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Sketch Concepts",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Grid System Design",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Geometry Rules",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Master Logo Construction",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "XL Version",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Large Version",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Medium Version",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Small Version",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Extra Small Version",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Typography Research",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Wordmark Design",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Primary Colors",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Secondary Colors",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Theme Systems",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Safe Area Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Minimum Size Definition",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Incorrect Usage Examples",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Favicon Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "App Icon Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Social Media Package",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "GitHub Avatar",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "GitHub Banner",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Repository Branding",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Cover Page System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Header System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Footer System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Watermark System",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Round Seal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Square Seal",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Signature Stamp",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Horizontal Co-Brand",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Vertical Co-Brand",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Publication Branding",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Brand Story",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Brand Narrative",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Brand Guidelines",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "SVG Export",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "PNG Export",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "PDF Export",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Source Backup",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Print Testing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Mobile Testing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Website Testing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "GitHub Testing",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Asset Review",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Documentation Review",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Versioning",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Release Packaging",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "Archive Creation",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 60,
+                    "title": "Official Release",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:22:25.213",
+                    "utc": "2026-10-24 22:22:25.213",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 60,
+                "percentage": 0
+            }
+        },
+        {
             "task_id": "TASK-000023",
             "registry": "REG-000023",
             "status": "active",

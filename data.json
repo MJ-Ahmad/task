@@ -1,6 +1,467 @@
 {
     "tasks": [
         {
+            "task_id": "TASK-000025",
+            "registry": "REG-000025",
+            "status": "active",
+            "heading": "MJ Branding Asset Repository Development",
+            "description": "mj/assets/branding এর অধীনে MJ-Ahmad Brand System v1.0 এর জন্য একটি সম্পূর্ণ Branding Asset Repository প্রতিষ্ঠা করা। এই প্রকল্পের উদ্দেশ্য হলো Branding সম্পর্কিত সকল Foundation Documents, Research Documents, Strategic Assets, Logo Files, Color Systems, Typography Systems, Documentation Assets, GitHub Assets, Social Media Assets, Publication Assets, Export Files, Source Files এবং Archive Systems কে একটি Audit-Ready, Version-Controlled এবং Inheritable Structure এর অধীনে সংগঠিত করা।\n\nএই Repository ভবিষ্যতে MJ-Ahmad Brand Authority Source হিসেবে কাজ করবে এবং Branding সম্পর্কিত সকল তথ্য, নীতিমালা, ডিজাইন, এক্সপোর্ট এবং ইতিহাসের একক উৎস (Single Source of Truth) হিসেবে ব্যবহৃত হবে।",
+            "created_dhaka": "2026-10-25 04:44:13.682",
+            "created_utc": "2026-10-24 22:44:13.682",
+            "notes": [
+                "Success Criteria: mj/assets/branding becomes the official and authoritative repository for all MJ-Ahmad branding resources. Every branding component must have a defined location, documented ownership, naming conventions, version history and usage guidance. Upon completion, the repository should be capable of supporting logo development, documentation branding, GitHub branding, social branding, publication branding, co-branding initiatives and future brand governance activities without requiring structural redesign."
+            ],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "Create Branding Root Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "Create Foundation Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "Create Brand Name Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "Create Brand Mission Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "Create Brand Vision Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "Create Core Values Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "Create Brand Personality Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "Create Brand Story Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "Create Brand Narrative Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "Create Research Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "Create Logo Audit Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "Create Competitor Analysis Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "Create Logo Research Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "Create Typography Research Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "Create Color Research Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "Create Strategy Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "Create Logo Meaning Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "Create Logo Architecture Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "Create Visual Language Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "Create Naming Convention Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "Create Sketches Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "Create Geometry Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "Create Grid System Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "Create Geometry Rules Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "Create Safe Area Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "Create Minimum Size Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "Create Construction Guide Document",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "Create Logos Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "Create Master Logo Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "Create Monogram Logo Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "Create Wordmark Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "Create Icon Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "Create Watermark Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "Create Seal Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "Create Responsive Logo Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "Create Color System Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "Create Palette Definition Files",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "Create Theme Definition Files",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "Create Typography Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "Create Font Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "Create Favicons Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "Create Favicon Asset Set",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "Create App Icons Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "Create Social Branding Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "Create GitHub Branding Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "Create Documentation Branding Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "Create Publication Branding Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "Create Co-Branding Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "Create Quraner Feriwala Branding Kit",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "Create Brand Guidelines Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "Create Export Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "Create SVG Export Package",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "Create PNG Export Package",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "Create PDF Export Package",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "Create Source Files Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "Create Archive Directory",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "Review Repository Structure",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "Validate Asset Naming Standards",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "Validate Documentation Completeness",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 60,
+                    "title": "Create Branding README",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 61,
+                    "title": "Version Repository Assets",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 62,
+                    "title": "Publish Branding Repository Baseline",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 04:44:13.682",
+                    "utc": "2026-10-24 22:44:13.682",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 62,
+                "percentage": 0
+            }
+        },
+        {
             "task_id": "TASK-000024",
             "registry": "REG-000024",
             "status": "active",

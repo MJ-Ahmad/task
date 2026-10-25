@@ -1,6 +1,773 @@
 {
     "tasks": [
         {
+            "task_id": "TASK-000032",
+            "registry": "REG-000032",
+            "status": "active",
+            "heading": "mj এর লোগো ট্রিটির সকল ফাইল গুলো প্রাথমিক ভাবে তৈরি করা",
+            "description": "assets/branding/logos/\nREADME.md\nsource/\nmaster-logo.fig\nmaster-logo.ai\nmaster-logo.svg\nmonogram.fig\nmonogram.ai\nmonogram.svg\nicon.fig\nicon.ai\nicon.svg\nwordmark.svg\n\nmaster/\nmj-master-black.svg\nmj-master-white.svg\nmj-master-color.svg\nmj-master-black.png\nmj-master-white.png\nmj-master-color.png\n\nmonogram/\nmj-monogram-black.svg\nmj-monogram-white.svg\nmj-monogram-color.svg\nmj-monogram-black.png\nmj-monogram-white.png\nmj-monogram-color.png\n\nicon/\nmj-icon-black.svg\nmj-icon-white.svg\nmj-icon-color.svg\nmj-icon-black.png\nmj-icon-white.png\nmj-icon-color.png\n\nwordmark/\nmj-wordmark-black.svg\nmj-wordmark-white.svg\nmj-wordmark-color.svg\nmj-wordmark-black.png\nmj-wordmark-white.png\nmj-wordmark-color.png\n\nseal/\nmj-round-seal.svg\nmj-square-seal.svg\nmj-official-seal.svg\nmj-round-seal.png\nmj-square-seal.png\nmj-official-seal.png\n\nwatermark/\nmj-watermark-light.svg\nmj-watermark-dark.svg\nmj-watermark-light.png\nmj-watermark-dark.png\n\nresponsive/xl/\nlogo-xl.svg\nlogo-xl.png\n\nresponsive/xs/\nlogo-xs.svg\nlogo-xs.png\n   \nresponsive/lg/\nlogo-lg.svg\nlogo-lg.png\n\nresponsive/md/\nlogo-md.svg\nlogo-md.png\n\nresponsive/sm/\nlogo-sm.svg\nlogo-sm.png\n\nfavicon/\nfavicon-16.png\nfavicon-32.png\nfavicon-48.png\nfavicon-64.png\nfavicon-96.png\nfavicon-128.png\nfavicon-256.png\nfavicon-512.png\n\napp-icons/\napp-icon-128.png\napp-icon-256.png\napp-icon-512.png\nandroid-icon-192.png\nandroid-icon-512.png\nios-icon-180.png\nwindows-icon-256.png\n\nsocial/\ngithub-avatar-512.png\ngithub-avatar-1024.png\nlinkedin-avatar-800.png\nfacebook-avatar-512.png\nyoutube-avatar-800.png\ntelegram-avatar-512.png\n\nexports/\nsvg/\npng/\npdf/\nprint/\narchive/v1.0/\narchive/v1.1/\narchive/legacy/",
+            "created_dhaka": "2026-10-25 18:58:40.251",
+            "created_utc": "2026-10-25 12:58:40.251",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "README.md",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "source ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ১০ টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "master-logo.fig",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "master-logo.ai",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "master-logo.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "monogram.fig",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "monogram.ai",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "monogram.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "icon.fig",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "icon.ai",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "icon.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "wordmark.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "master ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ছয়টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "mj-master-black.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "mj-master-white.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "mj-master-color.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "mj-master-black.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "mj-master-white.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "mj-master-color.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "monogram ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ছয়টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "mj-monogram-black.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "mj-monogram-white.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 23,
+                    "title": "mj-monogram-color.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 24,
+                    "title": "mj-monogram-black.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 25,
+                    "title": "mj-monogram-white.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 26,
+                    "title": "mj-monogram-color.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 27,
+                    "title": "icon ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ছয়টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 28,
+                    "title": "mj-icon-black.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 29,
+                    "title": "mj-icon-white.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 30,
+                    "title": "mj-icon-color.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 31,
+                    "title": "mj-icon-black.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 32,
+                    "title": "mj-icon-white.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 33,
+                    "title": "mj-icon-color.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 34,
+                    "title": "wordmark ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ছয়টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 35,
+                    "title": "mj-wordmark-black.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 36,
+                    "title": "mj-wordmark-white.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 37,
+                    "title": "mj-wordmark-color.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 38,
+                    "title": "mj-wordmark-black.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 39,
+                    "title": "mj-wordmark-white.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 40,
+                    "title": "mj-wordmark-color.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 41,
+                    "title": "seal ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ছয়টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 42,
+                    "title": "mj-round-seal.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 43,
+                    "title": "mj-square-seal.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 44,
+                    "title": "mj-official-seal.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 45,
+                    "title": "mj-round-seal.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 46,
+                    "title": "mj-square-seal.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 47,
+                    "title": "mj-official-seal.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 48,
+                    "title": "watermark ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক চারটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 49,
+                    "title": "mj-watermark-light.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 50,
+                    "title": "mj-watermark-dark.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 51,
+                    "title": "mj-watermark-light.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 52,
+                    "title": "mj-watermark-dark.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 53,
+                    "title": "responsive ডিরেক্টরি তৈরি করা ও এর মধ্যে xl ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক দুটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 54,
+                    "title": "logo-xl.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 55,
+                    "title": "logo-xl.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 56,
+                    "title": "responsive এর মধ্যে xs ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক দুটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 57,
+                    "title": "logo-xs.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 58,
+                    "title": "logo-xs.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 59,
+                    "title": "responsive এর মধ্যে lg ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক দুটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 60,
+                    "title": "logo-lg.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 61,
+                    "title": "logo-lg.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 62,
+                    "title": "responsive এর মধ্যে md ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক দুটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 63,
+                    "title": "logo-md.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 64,
+                    "title": "logo-md.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 65,
+                    "title": "responsive এর মধ্যে sm ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক দুটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 66,
+                    "title": "logo-sm.svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 67,
+                    "title": "logo-sm.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 68,
+                    "title": "favicon ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক আটটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 69,
+                    "title": "favicon-16.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 70,
+                    "title": "favicon-32.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 71,
+                    "title": "favicon-48.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 72,
+                    "title": "favicon-64.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 73,
+                    "title": "favicon-96.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 74,
+                    "title": "favicon-128.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 75,
+                    "title": "favicon-256.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 76,
+                    "title": "favicon-512.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 77,
+                    "title": "app-icons ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক সাতটি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 78,
+                    "title": "app-icon-128.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 79,
+                    "title": "app-icon-256.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 80,
+                    "title": "app-icon-512.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 81,
+                    "title": "android-icon-192.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 82,
+                    "title": "android-icon-512.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 83,
+                    "title": "ios-icon-180.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 84,
+                    "title": "windows-icon-256.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 85,
+                    "title": "social ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক ছয়টি ফাইল তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 86,
+                    "title": "github-avatar-512.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 87,
+                    "title": "github-avatar-1024.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 88,
+                    "title": "linkedin-avatar-800.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 89,
+                    "title": "facebook-avatar-512.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 90,
+                    "title": "youtube-avatar-800.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 91,
+                    "title": "telegram-avatar-512.png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 92,
+                    "title": "exports ডিরেক্টরি তৈরি করা এবং নিচের ধারাবাহিক চারটি ডিরেক্টরি এর মধ্যে তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 93,
+                    "title": "svg",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 94,
+                    "title": "png",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 95,
+                    "title": "pdf",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 96,
+                    "title": "print",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 97,
+                    "title": "archive ডিরেক্টরি তৈরি করা এবং এর মধ্যে নিচের তিনটি ডিরেক্টরি তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 98,
+                    "title": "v1.0",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 99,
+                    "title": "v1.1",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 100,
+                    "title": "legacy",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 101,
+                    "title": "সব কিছু যথাযথ ভাবে ব্যকাপ রাখা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 102,
+                    "title": "mj/data/lab/dev/draft/zip/task এর মধ্যে assets ও তৈরি করা সকল ফাইল যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 103,
+                    "title": "zip ডিরেক্টরির task এর কপি সংরক্ষণ করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 104,
+                    "title": "task কে zip তে কনভার্ট করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 105,
+                    "title": "chat.draft.txt তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 106,
+                    "title": "পরবর্তী পদক্ষেপ গ্রহণের মাধ্যমে নতুন একটি টাস্ক তৈরি করে এই টাস্ক সমাপ্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 18:58:40.251",
+                    "utc": "2026-10-25 12:58:40.251",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 106,
+                "percentage": 0
+            }
+        },
+        {
             "task_id": "TASK-000031",
             "registry": "REG-000031",
             "status": "active",

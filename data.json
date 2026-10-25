@@ -1,6 +1,185 @@
 {
     "tasks": [
         {
+            "task_id": "TASK-000031",
+            "registry": "REG-000031",
+            "status": "active",
+            "heading": "প্রাথমিক জরুরী সেটআপ গুলো সম্পূর্ণ করা",
+            "description": "মূল ও প্রধান টার্গেট হচ্ছে কোরআনের ফেরিওয়ালা এর পূর্নাঙ্গ সেটাপ অতি দ্রুত সময়ের মধ্যে প্রাথমিক সেটআপ চুড়ান্ত করা, সেই জন্য এর সহায়ক হিসেবে পূর্বে যে সেটাপ গুলো মোটামুটি ভাবে সবকিছু বুঝে বুঝে সেটাপ করা প্রয়োজন সেই সেটাপ গুলো অতি জরুরী ভিত্তিতে প্রাথমিক ভাবে সম্পন্ন করা, এর মধ্যে অন্তর্ভুক্ত যেমন, (টাস্ক, নোট, অডিট, রেজিস্ট্রি) ভিন্ন ভিন্ন স্বয়ং সম্পূর্ণ একাধিক রিপোর মাধ্যমে সম্পন্ন করা, অতঃপর mj এর মধ্যে যথাযথ সঠিক স্থানে সঠিকভাবে যুক্ত করা একাধিক রিপো এক সাথে, তারপর কোরআনের ফেরিওয়ালা এর প্রাথমিক পাবলিক পেইজ ডিজাইন টাস্ক তৈরি করা এবং কোরআনের ফেরিওয়ালা রিকভারি টাইমলাইন ও রোডম্যাপ তৈরি করা",
+            "created_dhaka": "2026-10-25 15:15:02.284",
+            "created_utc": "2026-10-25 09:15:02.284",
+            "notes": [],
+            "attachments": [],
+            "steps": [
+                {
+                    "id": 1,
+                    "title": "প্রথমে টাস্ক-নোট-অডিট-রেজিস্ট্রি-এমজে-কিউএফ এর প্রতিটির মূল রিপোর পাশাপাশি পাঁচটি করে রিপো তৈরি করা-যথাক্রমে প্রথম অক্ষরের সাথে v00 v01 v02 v03 v04 v05",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 2,
+                    "title": "প্রতিটি রিপো ডাটা-প্রজেক্টস-রিপো ও প্রজেক্টস-ওয়ার্কট্রি তৈরি সম্পূর্ণ করা শুধু মাত্র মেইন ব্রান্স",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 3,
+                    "title": "v00 এর মধ্যে প্রথম মূল কাঠামোটি সংরক্ষণ করা এবং v01 থেকে উন্নত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 4,
+                    "title": "টাস্ক এর সেটআপ সম্পূর্ণ পূর্ব এআই-র উপস্থাপনা তৈরি করে mj-data-task-chat-draft.txt যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 5,
+                    "title": "যথাযথ ভাবে টাস্ক এর প্রাথমিক সেটআপ সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 6,
+                    "title": "নিজের খাতা এর চ্যাটিং ড্রাফ্ট তৈরি করে যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 7,
+                    "title": "যথাযথ ভাবে নিজের খাতার প্রাথমিক সেটআপ সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 8,
+                    "title": "অডিট এর চ্যাটিং ড্রাফ্ট তৈরি করে যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 9,
+                    "title": "যথাযথ ভাবে অডিট এর প্রাথমিক সেটআপ সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 10,
+                    "title": "রেজিস্ট্রি এর চ্যাটিং ড্রাফ্ট তৈরি করে যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 11,
+                    "title": "যথাযথ ভাবে রেজিস্ট্রি এর প্রাথমিক সেটআপ সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 12,
+                    "title": "চারটির সমন্বয়ে একটি সেটআপ তৈরি করার চ্যাটিং ড্রাফ্ট তৈরি করে যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 13,
+                    "title": "যথাযথ ভাবে চারটির সমন্বয়ে একটি সেটআপ সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 14,
+                    "title": "এমজে এর চ্যাটিং ড্রাফ্ট তৈরি করে যুক্ত করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 15,
+                    "title": "যথাযথ ভাবে প্রাথমিক স্টাকচার তৈরি করা সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 16,
+                    "title": "হোম পেজের সাথে চারটি সিস্টেম সহ কোরআনের ফেরিওয়ালা ও অন্যান্য স্টার্ট‌আপ প্রজেক্টের যথাযথ সঠিক লিংক ও ডিজাইন পূর্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 17,
+                    "title": "এমজে এর একটি ডিজিডি পেইজের জন্য চ্যাটিং ড্রাফ্ট তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 18,
+                    "title": "যথাযথ ভাবে ডিজিডি পেইজ সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 19,
+                    "title": "কোরআনের ফেরিওয়ালা এর প্রাথমিক ডিজাইন স্টাকচার সম্পন্ন করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 20,
+                    "title": "কোরআনের ফেরিওয়ালা এর রিকভারি রোডম্যাপ ও টাইমলাইন তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 21,
+                    "title": "25.10.2026.23.59 এর মধ্যে উপরের সবগুলো শেষ করার জন্য জীবন দিয়ে চেষ্টা করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                },
+                {
+                    "id": 22,
+                    "title": "পরবর্তী টাস্ক তৈরি করা",
+                    "completed": false,
+                    "completed_dhaka": null,
+                    "completed_utc": null
+                }
+            ],
+            "history": [
+                {
+                    "dhaka": "2026-10-25 15:15:02.284",
+                    "utc": "2026-10-25 09:15:02.284",
+                    "action": "Task created"
+                }
+            ],
+            "progress": {
+                "completed": 0,
+                "remaining": 22,
+                "percentage": 0
+            }
+        },
+        {
             "task_id": "TASK-000030",
             "registry": "REG-000030",
             "status": "active",
